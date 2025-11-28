@@ -1,0 +1,160 @@
+[
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ElAhorcadito.Models.DTOs.Auth.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.AuthController",
+    "Method": "GetPerfil",
+    "RelativePath": "api/Auth/perfil",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.AuthController",
+    "Method": "ActualizarPreferencias",
+    "RelativePath": "api/Auth/preferencias",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ElAhorcadito.Models.DTOs.Auth.PreferenciasDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Auth/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshToken",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ElAhorcadito.Models.DTOs.Auth.RegistroDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.JuegoController",
+    "Method": "ActualizarProgreso",
+    "RelativePath": "api/Juego/actualizar-progreso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ElAhorcadito.Models.DTOs.Juego.ActualizarProgresoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.JuegoController",
+    "Method": "IniciarRetoDiario",
+    "RelativePath": "api/Juego/iniciar-diario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.JuegoController",
+    "Method": "ObtenerPalabraActual",
+    "RelativePath": "api/Juego/palabra-actual/{idTema}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTema",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.JuegoController",
+    "Method": "SincronizarOffline",
+    "RelativePath": "api/Juego/sincronizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ElAhorcadito.Models.DTOs.Juego.ProgresoOfflineDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.RachaController",
+    "Method": "GetEstadisticas",
+    "RelativePath": "api/Racha/estadisticas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.TemasController",
+    "Method": "GetPage",
+    "RelativePath": "api/Temas/pagina/{pageNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

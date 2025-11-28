@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL AHORCADITO - Iniciar Sesión</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            background-color: #2A9D8F;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;
+            padding: 20px;
+        }
+
+        header, footer {
+            display: none;
+        }
+
+        main {
+            width: 100%;
+            max-width: 450px;
+            background-color: transparent;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        .ahorcado-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+            padding-top: 10px;
+        }
+
+        .ahorcado-svg {
+            width: min(280px, 60vw);
+            height: auto;
+            filter: invert(1);
+            margin-bottom: 5px;
+        }
+
+        .titulo-juego {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: clamp(1.8em, 6vw, 2.8em);
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            padding: 0;
+            white-space: nowrap;
+            text-align: center;
+            width: 100%;
+        }
+
+        .bienvenida {
+            text-align: center;
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: clamp(0.9em, 3vw, 1em);
+            font-weight: 500;
+        }
+
+        .opciones {
+            display: flex;
+            margin-bottom: 0;
+            width: 100%;
+            position: relative;
+            margin-top: 5px;
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+        }
+
+        .opcion {
+            flex: 1;
+            text-align: center;
+            padding: 15px 5px;
+            cursor: pointer;
+            font-size: clamp(0.85em, 2.8vw, 1.1em);
+            color: white;
+            background-color: transparent;
+            border-bottom: none;
+            font-weight: bold;
+            transform: skewX(-15deg);
+            transition: all 0.3s ease;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+            .opcion span {
+                display: inline-block;
+                transform: skewX(15deg);
+                white-space: nowrap;
+                padding: 0 5px;
+            }
+
+            .opcion.activa {
+                background-color: #f58428;
+                color: white;
+                z-index: 2;
+                flex: 1.2;
+                transform: skewX(-15deg);
+            }
+
+            .opcion:not(.activa) {
+                z-index: 1;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+        .formulario-login,
+        .formulario-registro {
+            display: none;
+            border-top: 1px solid white;
+            border-top-left-radius: 5px;
+        }
+
+            .formulario-login.activo,
+            .formulario-registro.activo {
+                display: block;
+            }
+
+        .campo {
+            margin-bottom: 0;
+            background-color: #f58428;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid white;
+        }
+
+            .campo:first-of-type {
+                border-top-left-radius: 5px;
+            }
+
+            .campo:last-of-type {
+                border-bottom: 1px solid #2A9D8F;
+            }
+
+            .campo input {
+                width: 100%;
+                padding: 0;
+                box-sizing: border-box;
+                border: none;
+                background-color: transparent;
+                color: white;
+                font-size: clamp(1em, 3vw, 1.1em);
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
+
+                .campo input::placeholder {
+                    color: white;
+                    text-transform: lowercase;
+                    font-size: clamp(0.9em, 3vw, 1em);
+                    font-weight: 700;
+                    opacity: 0.9;
+                }
+
+                .campo input:focus {
+                    outline: none;
+                }
+
+            .campo .input-icon {
+                font-family: sans-serif;
+                color: #e7761d;
+                font-size: clamp(1.2em, 3vw, 1.4em);
+                margin-left: 10px;
+                cursor: pointer;
+                flex-shrink: 0;
+            }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: clamp(15px, 4vw, 18px);
+            background-color: #3b3b3b;
+            color: white;
+            border: none;
+            font-size: clamp(1.1em, 3vw, 1.2em);
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 0;
+            transition: background-color 0.3s ease;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+            .btn:hover {
+                background-color: #444444;
+                color: white;
+            }
+
+        @media (max-width: 360px) {
+            body {
+                padding: 10px;
+            }
+
+            .opcion {
+                padding: 12px 3px;
+                font-size: 0.8em;
+            }
+
+                .opcion span {
+                    padding: 0 3px;
+                }
+
+            .campo {
+                padding: 15px;
+            }
+
+                .campo input {
+                    font-size: 0.95em;
+                }
+
+                .campo .input-icon {
+                    margin-left: 8px;
+                    font-size: 1.2em;
+                }
+        }
+
+        @media (max-width: 480px) {
+            .opcion {
+                font-size: 0.9em;
+                padding: 14px 4px;
+            }
+
+                .opcion span {
+                    padding: 0 4px;
+                }
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 30px;
+            }
+
+            main {
+                max-width: 500px;
+            }
+
+            .ahorcado-svg {
+                width: 300px;
+            }
+
+            .titulo-juego {
+                font-size: 3em;
+            }
+
+            .bienvenida {
+                font-size: 1.2em;
+                margin-top: 20px;
+                margin-bottom: 15px;
+            }
+
+            .opcion {
+                padding: 18px 10px;
+                font-size: 1.1em;
+            }
+
+            .campo {
+                padding: 25px;
+            }
+
+                .campo input {
+                    font-size: 1.2em;
+                }
+
+            .btn {
+                padding: 20px;
+                font-size: 1.3em;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            main {
+                max-width: 550px;
+            }
+
+            .ahorcado-svg {
+                width: 320px;
+            }
+
+            .titulo-juego {
+                font-size: 3.2em;
+            }
+
+            .opcion {
+                font-size: 1.2em;
+                padding: 20px 15px;
+            }
+        }
+
+        /* 
+        @media (min-height: 800px) {
+            body {
+                justify-content: flex-start;
+                padding-top: 50px;
+            }
+        }
+        */
+
+        @media (min-width: 1400px) {
+            main {
+                max-width: 600px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            html, body {
+                height: 100vh;
+                overflow: hidden;
+                padding: 0 !important;
+            }
+
+            main {
+                transform: scale(0.92);
+                transform-origin: top center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div class="ahorcado-container">
+            <img src="images/hangman-6.svg" alt="Dibujo del ahorcado" class="ahorcado-svg">
+            <h1 class="titulo-juego">EL AHORCADITO</h1>
+        </div>
+
+        <div class="bienvenida">
+            ¡Bienvenido de nuevo!
+        </div>
+
+        <div class="opciones">
+            <div class="opcion activa" id="opcion-login"><span>Iniciar Sesión</span></div>
+            <div class="opcion" id="opcion-registro"><span>Registrarse</span></div>
+        </div>
+
+        <div class="formulario-login activo" id="form-login">
+            <div class="campo">
+                <input type="email" id="email" placeholder="correo electrónico">
+            </div>
+
+            <div class="campo">
+                <input type="password" id="password" placeholder="contraseña">
+                <span class="input-icon">🔒</span>
+            </div>
+
+            <a href="#" class="btn">Iniciar Sesión</a>
+        </div>
+
+        <div class="formulario-registro" id="form-registro">
+            <div class="campo">
+                <input type="text" id="nombre" placeholder="nombre completo">
+            </div>
+
+            <div class="campo">
+                <input type="email" id="email-registro" placeholder="correo electrónico">
+            </div>
+
+            <div class="campo">
+                <input type="password" id="password-registro" placeholder="contraseña">
+                <span class="input-icon">🔒</span>
+            </div>
+
+            <div class="campo">
+                <input type="password" id="confirmar-password" placeholder="confirmar contraseña">
+                <span class="input-icon">🔒</span>
+            </div>
+
+            <a href="#" class="btn">Registrarse</a>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        const opcionLogin = document.getElementById("opcion-login");
+        const opcionRegistro = document.getElementById("opcion-registro");
+        const formLogin = document.getElementById("form-login");
+        const formRegistro = document.getElementById("form-registro");
+
+        function cambiarFormulario(formularioActivo) {
+            opcionLogin.classList.remove("activa");
+            opcionRegistro.classList.remove("activa");
+
+            formLogin.classList.remove("activo");
+            formRegistro.classList.remove("activo");
+
+            if (formularioActivo === 'login') {
+                opcionLogin.classList.add("activa");
+                formLogin.classList.add("activo");
+            } else {
+                opcionRegistro.classList.add("activa");
+                formRegistro.classList.add("activo");
+            }
+        }
+
+        opcionLogin.addEventListener("click", function () {
+            cambiarFormulario('login');
+        });
+
+        opcionRegistro.addEventListener("click", function () {
+            cambiarFormulario('registro');
+        });
+
+        function verificarTextoVisible() {
+            const opciones = document.querySelectorAll('.opcion span');
+            opciones.forEach(span => {
+                const opcion = span.parentElement;
+                const opcionWidth = opcion.offsetWidth;
+                const spanWidth = span.offsetWidth;
+
+                if (spanWidth > opcionWidth * 0.9) {
+                    const currentFontSize = parseFloat(window.getComputedStyle(span).fontSize);
+                    span.style.fontSize = (currentFontSize * 0.9) + 'px';
+                }
+            });
+        }
+
+        window.addEventListener('load', verificarTextoVisible);
+        window.addEventListener('resize', verificarTextoVisible);
+    </script>
+
+</body>
+</html>

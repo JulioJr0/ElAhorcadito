@@ -1,0 +1,718 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\temaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\temaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\controllers\\api\\temascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\temascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\rachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\rachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\controllers\\api\\rachacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\rachacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\irachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\irachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\juegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\juegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\partidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\partidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\ipartidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\ipartidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\progresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\progresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\iprogresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\iprogresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\actualizarprogresodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\actualizarprogresodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\controllers\\api\\juegocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\juegocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\validators\\registrodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\validators\\registrodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\helpers\\encriptacionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:helpers\\encriptacionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\temas\\itemalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\temas\\itemalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\temas\\temalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\temas\\temalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\itemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\itemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\ijuegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\ijuegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\ahorcaditocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\ahorcaditocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\notificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\notificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\palabras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\palabras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\progresotemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\progresotemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\rachas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\rachas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\temas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\temas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\tokens.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:tokens.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\palabraactualdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\palabraactualdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\auth\\preferenciasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\preferenciasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\auth\\perfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\perfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\auth\\ipreferenciasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\ipreferenciasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\controllers\\api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.html",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\login.html",
+              "RelativeDocumentMoniker": "wwwroot\\login.html",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\login.html",
+              "RelativeToolTip": "wwwroot\\login.html",
+              "ViewState": "AgIAAHUBAAAAAAAAAAAAAIsBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-26T05:31:05.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RachaService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\RachaService.cs",
+              "RelativeDocumentMoniker": "Services\\RachaService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\RachaService.cs",
+              "RelativeToolTip": "Services\\RachaService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAG0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:08:57.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PartidaOfflineDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:57:39.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JuegoService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\JuegoService.cs",
+              "RelativeDocumentMoniker": "Services\\JuegoService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\JuegoService.cs",
+              "RelativeToolTip": "Services\\JuegoService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:08:53.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:33:44.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GeminiService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\GeminiService.cs",
+              "RelativeDocumentMoniker": "Services\\GeminiService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\GeminiService.cs",
+              "RelativeToolTip": "Services\\GeminiService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:08:28.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:33:38.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RachaController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\RachaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\RachaController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\RachaController.cs",
+              "RelativeToolTip": "Controllers\\api\\RachaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:00:42.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRachaService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IRachaService.cs",
+              "RelativeDocumentMoniker": "Services\\IRachaService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IRachaService.cs",
+              "RelativeToolTip": "Services\\IRachaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:08:47.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TemasController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\TemasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\TemasController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\TemasController.cs",
+              "RelativeToolTip": "Controllers\\api\\TemasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:54:44.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TemaService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\TemaService.cs",
+              "RelativeDocumentMoniker": "Services\\TemaService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\TemaService.cs",
+              "RelativeToolTip": "Services\\TemaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:09:03.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegistroDTOValidator.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Validators\\RegistroDTOValidator.cs",
+              "RelativeDocumentMoniker": "Models\\Validators\\RegistroDTOValidator.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Validators\\RegistroDTOValidator.cs",
+              "RelativeToolTip": "Models\\Validators\\RegistroDTOValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:09:56.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T03:09:10.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:09:21.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ActualizarProgresoDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\ActualizarProgresoDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\ActualizarProgresoDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\ActualizarProgresoDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\ActualizarProgresoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:10:39.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProgresoOfflineDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:13:50.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IPartidaOfflineDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\IPartidaOfflineDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\IPartidaOfflineDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\IPartidaOfflineDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\IPartidaOfflineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:14:34.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IProgresoOfflineDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\IProgresoOfflineDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\IProgresoOfflineDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\IProgresoOfflineDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\IProgresoOfflineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:14:41.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IJuegoService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IJuegoService.cs",
+              "RelativeDocumentMoniker": "Services\\IJuegoService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IJuegoService.cs",
+              "RelativeToolTip": "Services\\IJuegoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:08:45.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JuegoController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\JuegoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\JuegoController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\JuegoController.cs",
+              "RelativeToolTip": "Controllers\\api\\JuegoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:52:54.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EncriptacionHelper.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Helpers\\EncriptacionHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\EncriptacionHelper.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Helpers\\EncriptacionHelper.cs",
+              "RelativeToolTip": "Helpers\\EncriptacionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:52:54.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRepository.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:53:25.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Helpers\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\JwtHelper.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Helpers\\JwtHelper.cs",
+              "RelativeToolTip": "Helpers\\JwtHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:52:56.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Mappings\\MappingProfile.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:53:01.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Repository.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:08:11.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ITemaService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\ITemaService.cs",
+              "RelativeDocumentMoniker": "Services\\ITemaService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\ITemaService.cs",
+              "RelativeToolTip": "Services\\ITemaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:08:50.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TemaListaDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Temas\\TemaListaDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Temas\\TemaListaDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Temas\\TemaListaDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Temas\\TemaListaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:14:24.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ITemaListaDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Temas\\ITemaListaDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Temas\\ITemaListaDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Temas\\ITemaListaDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Temas\\ITemaListaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:40:37.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IGeminiService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IGeminiService.cs",
+              "RelativeDocumentMoniker": "Services\\IGeminiService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IGeminiService.cs",
+              "RelativeToolTip": "Services\\IGeminiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:08:42.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AhorcaditoContext.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\AhorcaditoContext.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\AhorcaditoContext.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\AhorcaditoContext.cs",
+              "RelativeToolTip": "Models\\Entities\\AhorcaditoContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:33:52.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Notificaciones.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Notificaciones.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Notificaciones.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Notificaciones.cs",
+              "RelativeToolTip": "Models\\Entities\\Notificaciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:34:24.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Palabras.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Palabras.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Palabras.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Palabras.cs",
+              "RelativeToolTip": "Models\\Entities\\Palabras.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:34:23.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProgresoTemas.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\ProgresoTemas.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\ProgresoTemas.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\ProgresoTemas.cs",
+              "RelativeToolTip": "Models\\Entities\\ProgresoTemas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:34:21.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Rachas.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Rachas.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Rachas.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Rachas.cs",
+              "RelativeToolTip": "Models\\Entities\\Rachas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:34:19.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RefreshTokens.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\RefreshTokens.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\RefreshTokens.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\RefreshTokens.cs",
+              "RelativeToolTip": "Models\\Entities\\RefreshTokens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:34:18.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Temas.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Temas.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Temas.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Temas.cs",
+              "RelativeToolTip": "Models\\Entities\\Temas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:34:12.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Usuarios.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Usuarios.cs",
+              "RelativeToolTip": "Models\\Entities\\Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:34:15.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "tokens.txt",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\tokens.txt",
+              "RelativeDocumentMoniker": "tokens.txt",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\tokens.txt",
+              "RelativeToolTip": "tokens.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-25T03:09:42.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PalabraActualDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\PalabraActualDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\PalabraActualDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\PalabraActualDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\PalabraActualDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:57:40.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PreferenciasDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Auth\\PreferenciasDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\PreferenciasDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Auth\\PreferenciasDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\PreferenciasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:57:32.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PerfilDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Auth\\PerfilDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\PerfilDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Auth\\PerfilDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\PerfilDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:57:30.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IPreferenciasDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Auth\\IPreferenciasDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\IPreferenciasDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Auth\\IPreferenciasDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\IPreferenciasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:57:26.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\AuthController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\api\\AuthController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:33:18.204Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
