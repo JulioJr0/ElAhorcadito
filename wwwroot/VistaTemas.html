@@ -3,103 +3,222 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="Style.css" type="text/css">
+    <link rel="stylesheet" href="scripts/style_vistaTemas.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temas</title>
 </head>
 <body>
     <h1>Todos los temas</h1>
     <main class="boteUno">
-        
+
         <section class="retoHoy">
-            <img src="Imagenes/flama.png" />
+            <img src="images/flama.png" />
             <div class="temma">
-                 <h4>Lenguajes de Programación</h4>
+                <h4>Lenguajes de Programación</h4>
                 <p><i>5</i> de <i>10</i> palabras completas</p>
             </div>
             <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
             <div class="progress-container">
                 <div class="progress-bar" style="width: 60%;"></div>
             </div>
-            <samp >
+            <samp>
                 <time datetime="24-11-2025">04/Oct/2025</time>
                 <data value="0">50%</data>
             </samp>
+            <p id="desafio">¡Desafio especial de hoy!</p>
         </section>
         <div class="search-box">
-            <input type="text"/>
-            <span class="search-icon"><img src="Imagenes/lupa.png" /></span>
+            <input type="text" />
+            <span class="search-icon"><img src="images/lupa.png" /></span>
         </div>
         <p>1 resultado encontrado</p>
-        <div class="cartas-con"> 
-        <section class="cartas">
-            <img src="Imagenes/control.png" />
-            <div class="temma-cartas">
-                 <h4>Lenguajes de Programación</h4>
-                <p><i>5</i> de <i>10</i> palabras completas</p>
-            </div>
-            <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 60%;"></div>
-            </div>
-            <samp >
-                <time datetime="24-11-2025">04/Oct/2025</time>
-                <data value="0">50%</data>
-            </samp>
-        </section>
-        <section class="cartas">
-            <img src="Imagenes/control.png" />
-            <div class="temma-cartas">
-                 <h4>Lenguajes de Programación</h4>
-                <p><i>5</i> de <i>10</i> palabras completas</p>
-            </div>
-            <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 60%;"></div>
-            </div>
-            <samp >
-                <time datetime="24-11-2025">04/Oct/2025</time>
-                <data value="0">50%</data>
-            </samp>
-        </section>
-        <section class="cartas">
-            <img src="Imagenes/control.png" />
-            <div class="temma-cartas">
-                 <h4>Lenguajes de Programación</h4>
-                <p><i>5</i> de <i>10</i> palabras completas</p>
-            </div>
-            <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 60%;"></div>
-            </div>
-            <samp >
-                <time datetime="24-11-2025">04/Oct/2025</time>
-                <data value="0">50%</data>
-            </samp>
-        </section>
-        <section class="cartas">
-            <img src="Imagenes/control.png" />
-            <div class="temma-cartas">
-                 <h4>Lenguajes de Programación</h4>
-                <p><i>5</i> de <i>10</i> palabras completas</p>
-            </div>
-            <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 60%;"></div>
-            </div>
-            <samp >
-                <time datetime="24-11-2025">04/Oct/2025</time>
-                <data value="0">50%</data>
-            </samp>
-        </section>
+        <div class="cartas-con">
+            <!--<section class="cartas">
+                <img src="images/control.png" />
+                <div class="temma-cartas">
+                     <h4>Lenguajes de Programación</h4>
+                    <p><i>5</i> de <i>10</i> palabras completas</p>
+                </div>
+                <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <samp >
+                    <time datetime="24-11-2025">04/Oct/2025</time>
+                    <data value="0">50%</data>
+                </samp>
+
+            </section>
+            <section class="cartas">
+                <img src="images/control.png" />
+                <div class="temma-cartas">
+                     <h4>Lenguajes de Programación</h4>
+                    <p><i>5</i> de <i>10</i> palabras completas</p>
+                </div>
+                <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <samp >
+                    <time datetime="24-11-2025">04/Oct/2025</time>
+                    <data value="0">50%</data>
+                </samp>
+            </section>
+            <section class="cartas">
+                <img src="images/control.png" />
+                <div class="temma-cartas">
+                     <h4>Lenguajes de Programación</h4>
+                    <p><i>5</i> de <i>10</i> palabras completas</p>
+                </div>
+                <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <samp >
+                    <time datetime="24-11-2025">04/Oct/2025</time>
+                    <data value="0">50%</data>
+                </samp>
+            </section>
+            <section class="cartas">
+                <img src="images/control.png" />
+                <div class="temma-cartas">
+                     <h4>Lenguajes de Programación</h4>
+                    <p><i>5</i> de <i>10</i> palabras completas</p>
+                </div>
+                <q>Los pilares de desarrollo web y la inteligencia artificial. ¿podras con ellos? </q>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <samp >
+                    <time datetime="24-11-2025">04/Oct/2025</time>
+                    <data value="0">50%</data>
+                </samp>
+            </section>-->
         </div>
     </main>
     <footer>
         <a href="#">
-            <img src="Imagenes/Flecha.png" />
+            <img src="images/Flecha.png" />
             <p>Regresar</p>
         </a>
     </footer>
+    <script>
+    // ✅ Verificar autenticación
+    const token = localStorage.getItem('jwtToken');
+    if (!token) {
+        window.location.href = 'login.html';
+    }
+
+    let pageNumber = 1;
+    let todosLosTemas = [];
+
+    // ✅ Cargar temas desde la API
+    async function cargarTemas() {
+        try {
+            const response = await fetch(`/api/Temas/pagina/${pageNumber}`, {
+                headers: { 'Authorization': `Bearer ${token}` }
+            });
+
+            if (response.ok) {
+                const temas = await response.json();
+                todosLosTemas = temas;
+                mostrarTemas(temas);
+            } else if (response.status === 401) {
+                localStorage.removeItem('jwtToken');
+                window.location.href = 'login.html';
+            }
+        } catch (error) {
+            console.error('Error cargando temas:', error);
+            alert('Error de conexión');
+        }
+    }
+
+    // ✅ Mostrar temas en el DOM
+    function mostrarTemas(temas) {
+        const container = document.querySelector('.cartas-con');
+        const retoHoy = document.querySelector('.retoHoy');
+        const resultadoText = document.querySelector('main > p');
+
+        // Limpiar contenedor
+        container.innerHTML = '';
+
+        if (temas.length === 0) {
+            resultadoText.textContent = 'No hay temas disponibles';
+            return;
+        }
+
+        // Mostrar reto del día (primer tema)
+        const temaDiario = temas[0];
+        retoHoy.querySelector('.temma h4').textContent = temaDiario.nombre;
+        retoHoy.querySelector('.temma p').innerHTML = `<i>${temaDiario.palabrasCompletadas}</i> de <i>10</i> palabras completas`;
+        retoHoy.querySelector('q').textContent = temaDiario.descripcion;
+        retoHoy.querySelector('.progress-bar').style.width = temaDiario.porcentajeProgreso + '%';
+        retoHoy.querySelector('time').textContent = new Date(temaDiario.fechaGeneracion).toLocaleDateString('es-MX');
+        retoHoy.querySelector('data').textContent = Math.round(temaDiario.porcentajeProgreso) + '%';
+
+        // Click en reto diario
+        retoHoy.style.cursor = 'pointer';
+        retoHoy.onclick = () => {
+            sessionStorage.setItem('temaSeleccionado', JSON.stringify(temaDiario));
+            window.location.href = 'juego.html';
+        };
+
+        // Mostrar resto de temas
+        temas.forEach(tema => {
+            const card = document.createElement('section');
+            card.className = 'cartas';
+            card.style.cursor = 'pointer';
+            card.innerHTML = `
+                <img src="images/control.png" />
+                <div class="temma-cartas">
+                    <h4>${tema.nombre}</h4>
+                    <p><i>${tema.palabrasCompletadas}</i> de <i>10</i> palabras completas</p>
+                </div>
+                <q>${tema.descripcion}</q>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: ${tema.porcentajeProgreso}%;"></div>
+                </div>
+                <samp>
+                    <time datetime="${tema.fechaGeneracion}">${new Date(tema.fechaGeneracion).toLocaleDateString('es-MX')}</time>
+                    <data value="${tema.palabrasCompletadas}">${Math.round(tema.porcentajeProgreso)}%</data>
+                </samp>
+            `;
+
+            card.onclick = () => {
+                sessionStorage.setItem('temaSeleccionado', JSON.stringify(tema));
+                window.location.href = 'juego.html';
+            };
+
+            container.appendChild(card);
+        });
+
+        resultadoText.textContent = `${temas.length} resultado${temas.length !== 1 ? 's' : ''} encontrado${temas.length !== 1 ? 's' : ''}`;
+    }
+
+    // ✅ Buscar temas
+    const searchInput = document.querySelector('.search-box input');
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        if (query === '') {
+            mostrarTemas(todosLosTemas);
+        } else {
+            const filtrados = todosLosTemas.filter(tema =>
+                tema.nombre.toLowerCase().includes(query) ||
+                tema.descripcion.toLowerCase().includes(query)
+            );
+            mostrarTemas(filtrados);
+        }
+    });
+
+    // ✅ Botón regresar
+    document.querySelector('footer a').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.history.back();
+    });
+
+    // Cargar temas al iniciar
+    document.addEventListener('DOMContentLoaded', cargarTemas);
+    </script>
 </body>
 
 </html>

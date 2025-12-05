@@ -422,60 +422,25 @@
     </div>
 
     <script>
-        setInterval(function () {
-            let fechaHoraActual = new Date();
-            let hora = fechaHoraActual.getHours();
-            let min = fechaHoraActual.getMinutes();
-            let seg = fechaHoraActual.getSeconds();
-            console.log("Hora actual: " + hora + ":" + min + ":" + seg);
-        }, 1000);
-
-        setTimeout(function () {
-            console.log("¡Bienvenido a Tu Racha!");
-        }, 2000);
-
-        let diasSemana = ["Lun", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom"];
-
-        let diasLaborables = diasSemana.filter(function (dia) {
-            return dia !== "Sab" && dia !== "Dom";
-        });
-        console.log("Días laborables:", diasLaborables);
-
-        let diasMayusculas = diasSemana.map(function (dia) {
-            return dia.toUpperCase();
-        });
-        console.log("Días en mayúsculas:", diasMayusculas);
-
-        function cargarDatosUsuario() {
-            let datosGuardados = localStorage.getItem("datosRacha");
-
-            if (!datosGuardados) {
-                let datosIniciales = {
-                    rachaActiva: 0,
-                    diasCompletados: [],
-                    palabrasAdivinadas: 0,
-                    ultimaFecha: null
-                };
-                localStorage.setItem("datosRacha", JSON.stringify(datosIniciales));
-                return datosIniciales;
-            }
-
-            return JSON.parse(datosGuardados);
+        // ✅ Verificar autenticación
+        const token = localStorage.getItem('jwtToken');
+        if (!token) {
+            window.location.href = 'login.html';
         }
 
-        function guardarDatosUsuario(datos) {
-            localStorage.setItem("datosRacha", JSON.stringify(datos));
-        }
+        // Elementos del DOM
+        const rachaActivaElement = document.getElementById("racha-activa");
+        const mensajeRachaElement = document.getElementById("mensaje-racha");
+        const semanaContainer = document.getElementById("semana-container");
+        const temasCompletadosElement = document.getElementById("temas-completados");
+        const porcentajeTemasElement = document.getElementById("porcentaje-temas");
+        const barraProgresoElement = document.getElementById("barra-progreso");
+        const palabrasAdivinadasElement = document.getElementById("palabras-adivinadas");
+        const btnRegresar = document.getElementById("btn-regresar");
 
-        let rachaActivaElement = document.getElementById("racha-activa");
-        let mensajeRachaElement = document.getElementById("mensaje-racha");
-        let semanaContainer = document.getElementById("semana-container");
-        let temasCompletadosElement = document.getElementById("temas-completados");
-        let porcentajeTemasElement = document.getElementById("porcentaje-temas");
-        let barraProgresoElement = document.getElementById("barra-progreso");
-        let palabrasAdivinadasElement = document.getElementById("palabras-adivinadas");
-        let btnRegresar = document.getElementById("btn-regresar");
+        const diasSemana = ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"];
 
+        // ✅ Generar vista de días (solo lectura)
         function generarDiasSemana(diasCompletados) {
             semanaContainer.innerHTML = '';
 
@@ -489,7 +454,7 @@
                 if (estaCompletado) {
                     diaCircle.className = "day-circle day-complete";
                     let fuegoImg = document.createElement("img");
-                    fuegoImg.src = "racha.png";
+                    fuegoImg.src = "images/racha.png";
                     fuegoImg.alt = "Racha";
                     diaCircle.appendChild(fuegoImg);
                 } else {
@@ -503,114 +468,68 @@
                 diaContainer.appendChild(diaCircle);
                 diaContainer.appendChild(diaLabel);
                 semanaContainer.appendChild(diaContainer);
-
-                diaCircle.addEventListener("click", function () {
-                    marcarDiaCompletado(i);
-                });
             }
         }
 
-        function marcarDiaCompletado(indiceDia) {
-            let datosUsuario = cargarDatosUsuario();
-            let hoy = new Date().toDateString();
-
-            if (datosUsuario.diasCompletados.includes(indiceDia)) {
-                datosUsuario.diasCompletados = datosUsuario.diasCompletados.filter(function (dia) {
-                    return dia !== indiceDia;
+        // ✅ Cargar estadísticas desde la API
+        async function cargarEstadisticas() {
+            try {
+                const response = await fetch('/api/Racha/estadisticas', {
+                    headers: { 'Authorization': `Bearer ${token}` }
                 });
 
-                if (datosUsuario.ultimaFecha === hoy) {
-                    datosUsuario.rachaActiva = Math.max(0, datosUsuario.rachaActiva - 1);
-                    datosUsuario.ultimaFecha = null;
+                if (response.ok) {
+                    const stats = await response.json();
+
+                    // Actualizar racha activa
+                    rachaActivaElement.textContent = stats.diasConsecutivos;
+
+                    // Actualizar mensaje según racha
+                    if (stats.diasConsecutivos === 0) {
+                        mensajeRachaElement.textContent = "¡Comienza tu racha hoy!";
+                    } else if (stats.diasConsecutivos < 3) {
+                        mensajeRachaElement.textContent = "¡Sigue así para mantener tu racha!";
+                    } else if (stats.diasConsecutivos < 7) {
+                        mensajeRachaElement.textContent = "¡Excelente trabajo, vas por buen camino!";
+                    } else {
+                        mensajeRachaElement.textContent = "¡Eres increíble, sigue así!";
+                    }
+
+                    // Actualizar progreso semanal
+                    const diasCompletados = [];
+                    Object.keys(stats.progresoSemanal).forEach((diaKey, index) => {
+                        if (stats.progresoSemanal[diaKey]) {
+                            diasCompletados.push(index);
+                        }
+                    });
+                    generarDiasSemana(diasCompletados);
+
+                    // Actualizar temas completados
+                    temasCompletadosElement.textContent = `${stats.temasCompletados}/7`;
+                    const porcentaje = Math.round((stats.temasCompletados / 7) * 100);
+                    porcentajeTemasElement.textContent = porcentaje + "%";
+                    barraProgresoElement.style.width = porcentaje + "%";
+
+                    // Actualizar palabras adivinadas
+                    palabrasAdivinadasElement.textContent = stats.palabrasTotales;
+
+                } else if (response.status === 401) {
+                    localStorage.removeItem('jwtToken');
+                    window.location.href = 'login.html';
                 }
-            } else {
-                datosUsuario.diasCompletados.push(indiceDia);
-
-                let fechaAnterior = datosUsuario.ultimaFecha ?
-                    new Date(datosUsuario.ultimaFecha) : null;
-                let hoyObj = new Date();
-
-                if (!fechaAnterior ||
-                    (hoyObj.getTime() - fechaAnterior.getTime()) <= 24 * 60 * 60 * 1000) {
-                    datosUsuario.rachaActiva += 1;
-                } else {
-                    datosUsuario.rachaActiva = 1;
-                }
-
-                datosUsuario.ultimaFecha = hoy;
-                datosUsuario.palabrasAdivinadas += Math.floor(Math.random() * 5) + 1;
+            } catch (error) {
+                console.error('Error cargando estadísticas:', error);
+                alert('Error de conexión al cargar estadísticas');
             }
-
-            guardarDatosUsuario(datosUsuario);
-            actualizarInterfaz();
         }
 
-        function actualizarInterfaz() {
-            let datosUsuario = cargarDatosUsuario();
-
-            rachaActivaElement.textContent = datosUsuario.rachaActiva;
-
-            if (datosUsuario.rachaActiva === 0) {
-                mensajeRachaElement.textContent = "¡Comienza tu racha hoy!";
-            } else if (datosUsuario.rachaActiva < 3) {
-                mensajeRachaElement.textContent = "¡Sigue así para mantener tu racha!";
-            } else if (datosUsuario.rachaActiva < 7) {
-                mensajeRachaElement.textContent = "¡Excelente trabajo, vas por buen camino!";
-            } else {
-                mensajeRachaElement.textContent = "¡Eres increíble, sigue así!";
-            }
-
-            generarDiasSemana(datosUsuario.diasCompletados);
-
-            let temasCompletados = datosUsuario.diasCompletados.length;
-            let porcentaje = Math.round((temasCompletados / 7) * 100);
-
-            temasCompletadosElement.textContent = temasCompletados + "/7";
-            porcentajeTemasElement.textContent = porcentaje + "%";
-            barraProgresoElement.style.width = porcentaje + "%";
-
-            palabrasAdivinadasElement.textContent = datosUsuario.palabrasAdivinadas;
-        }
-
+        // Botón regresar
         btnRegresar.addEventListener("click", function () {
-            alert("¡Has regresado al menú principal!");
+            window.history.back();
         });
 
-        function calcularEstadisticas() {
-            let datosUsuario = cargarDatosUsuario();
-
-            let estadisticasDias = datosUsuario.diasCompletados.reduce(function (acum, dia) {
-                if (dia < 5) {
-                    acum.laborables++;
-                } else {
-                    acum.finSemana++;
-                }
-                return acum;
-            }, { laborables: 0, finSemana: 0 });
-
-            console.log("Estadísticas de días:", estadisticasDias);
-            return estadisticasDias;
-        }
-
-        function inicializarApp() {
-            actualizarInterfaz();
-            calcularEstadisticas();
-
-            setTimeout(function () {
-                let datosUsuario = cargarDatosUsuario();
-                if (datosUsuario.rachaActiva > 0) {
-                    console.log("¡Bienvenido de nuevo! Tu racha actual es de " + datosUsuario.rachaActiva + " días.");
-                } else {
-                    console.log("¡Bienvenido a Tu Racha! Comienza marcando algunos días.");
-                }
-            }, 3000);
-        }
-
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', inicializarApp);
-        } else {
-            inicializarApp();
-        }
+        // ✅ Cargar datos al iniciar
+        document.addEventListener('DOMContentLoaded', cargarEstadisticas);
     </script>
 </body>
 </html>

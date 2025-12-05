@@ -32,19 +32,53 @@ namespace ElAhorcadito.Controllers.api
             {
                 return BadRequest("Correo electrónico o contraseña incorrecta");
             }
-            return Ok(new { token, refreshToken });
+            HttpContext.Response.Cookies.Append("refreshtoken", refreshToken, new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = false,
+                SameSite = SameSiteMode.Lax
+            });
+
+            return Ok(token); 
         }
 
-        [HttpPost("refresh-token")]
-        public IActionResult RefreshToken([FromBody] string refreshToken)
+        [HttpGet("renew")]
+        public IActionResult Renew()
         {
-            var (newToken, newRefreshToken) = Service.RefreshToken(refreshToken);
-            if (newToken == string.Empty)
+            var cookie = Request.Cookies["refreshtoken"];
+
+            if (cookie != null)
             {
-                return Unauthorized("Refresh token inválido o expirado");
+                var (newToken, newRefreshToken) = Service.RefreshToken(cookie);
+
+                if (newToken == string.Empty)
+                {
+                    return Unauthorized();
+                }
+
+                HttpContext.Response.Cookies.Append("refreshtoken", newRefreshToken, new CookieOptions
+                {
+                    HttpOnly = true,
+                    Secure = false,
+                    SameSite = SameSiteMode.Lax
+                });
+
+                return Ok(newToken);
             }
-            return Ok(new { token = newToken, refreshToken = newRefreshToken });
+
+            return Unauthorized();
         }
+
+        //[HttpPost("refresh-token")]
+        //public IActionResult RefreshToken([FromBody] string refreshToken)
+        //{
+        //    var (newToken, newRefreshToken) = Service.RefreshToken(refreshToken);
+        //    if (newToken == string.Empty)
+        //    {
+        //        return Unauthorized("Refresh token inválido o expirado");
+        //    }
+        //    return Ok(new { token = newToken, refreshToken = newRefreshToken });
+        //}
 
         [Authorize]
         [HttpGet("perfil")]//ok

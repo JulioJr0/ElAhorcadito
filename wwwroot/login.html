@@ -398,6 +398,12 @@
     <footer></footer>
 
     <script>
+        // Verificar si ya está autenticado
+        const token = localStorage.getItem('jwtToken');
+        if (token) {
+            window.location.href = 'vistaTemas.html'; // Cambiar a tu página de inicio "inicio.html"
+        }
+
         const opcionLogin = document.getElementById("opcion-login");
         const opcionRegistro = document.getElementById("opcion-registro");
         const formLogin = document.getElementById("form-login");
@@ -406,7 +412,6 @@
         function cambiarFormulario(formularioActivo) {
             opcionLogin.classList.remove("activa");
             opcionRegistro.classList.remove("activa");
-
             formLogin.classList.remove("activo");
             formRegistro.classList.remove("activo");
 
@@ -425,6 +430,78 @@
 
         opcionRegistro.addEventListener("click", function () {
             cambiarFormulario('registro');
+        });
+
+        // ✅ LOGIN FETCH
+        document.querySelector("#form-login .btn").addEventListener("click", async function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (!email || !password) {
+                alert('Por favor completa todos los campos');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/Auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password }),
+                    credentials: 'include' // ✅ IMPORTANTE para cookies
+                });
+
+                if (response.ok) {
+                    const token = await response.text();
+                    localStorage.setItem('jwtToken', token);
+                    window.location.href = 'vistaTemas.html';
+                } else {
+                    alert('Correo o contraseña incorrecta');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error de conexión');
+            }
+        });
+
+        // ✅ REGISTRO FETCH
+        document.querySelector("#form-registro .btn").addEventListener("click", async function (e) {
+            e.preventDefault();
+
+            const nombreUsuario = document.getElementById("nombre").value;
+            const email = document.getElementById("email-registro").value;
+            const password = document.getElementById("password-registro").value;
+            const confirmarPassword = document.getElementById("confirmar-password").value;
+
+            if (!nombreUsuario || !email || !password || !confirmarPassword) {
+                alert('Por favor completa todos los campos');
+                return;
+            }
+
+            if (password !== confirmarPassword) {
+                alert('Las contraseñas no coinciden');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/Auth/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ nombreUsuario, email, password })
+                });
+
+                if (response.ok) {
+                    alert('Registro exitoso. Ahora puedes iniciar sesión.');
+                    cambiarFormulario('login');
+                } else {
+                    const errorText = await response.text();
+                    alert(errorText || 'Error en el registro');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error de conexión');
+            }
         });
 
         function verificarTextoVisible() {

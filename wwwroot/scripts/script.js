@@ -1,3 +1,17 @@
+// ✅ Verificar autenticación
+const token = localStorage.getItem('jwtToken');
+if (!token) {
+    window.location.href = 'login.html';
+}
+
+// ✅ Obtener tema seleccionado
+const temaSeleccionado = JSON.parse(sessionStorage.getItem('temaSeleccionado'));
+console.log(temaSeleccionado);
+if (!temaSeleccionado) {
+    alert('No se seleccionó ningún tema');
+    window.location.href = 'temas.html';
+}
+
 const hangmanImage = document.querySelector(".hangman-box img");
 const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".guesses-text b");
@@ -7,51 +21,105 @@ const playAgainBtn = document.querySelector(".play-again");
 
 let currentWord, correctLetters, wrongGuessCount;
 const maxGuesses = 6;
+let palabrasCifradas = [];
+let palabraIndex = 0;
+
+// ✅ Función para descifrar Base64
+function descifrarPalabra(palabraCifrada) {
+    try {
+        return atob(palabraCifrada);
+    } catch (e) {
+        console.error('Error descifrando palabra:', e);
+        return '';
+    }
+}
+
+// ✅ Cargar palabras del tema
+async function cargarPalabrasTema() {
+    try {
+        // Las palabras cifradas ya vienen en temaSeleccionado.palabrasCifradas
+        palabrasCifradas = temaSeleccionado.palabrasCifradas || [];
+        palabraIndex = temaSeleccionado.palabrasCompletadas || 0;
+
+        if (palabraIndex >= palabrasCifradas.length) {
+            alert('¡Ya completaste todas las palabras de este tema!');
+            window.location.href = 'temas.html';
+            return;
+        }
+
+        // Descifrar la palabra actual
+        currentWord = descifrarPalabra(palabrasCifradas[palabraIndex]);
+        console.log(currentWord);
+        resetGame();
+    } catch (error) {
+        console.error('Error cargando palabras:', error);
+        alert('Error al cargar el juego');
+    }
+}
 
 const resetGame = () => {
-    //Reinicia todas las variables del juego y los elementos UI
     correctLetters = [];
     wrongGuessCount = 0;
     hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
-    // guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
+    guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
     wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
     gameModal.classList.remove("show");
 }
 
-const getRandomWord = () => {
-    //selecciona una palabra aleatoria y pista de wordList
-    const {word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
-    currentWord = word;
-    // document.querySelector(".hint-text b").innerText = hint; //tema //me faltaba el punto de la clase "." para localizar el elemento
-    resetGame();
-}
-
-const gameOver = (isVictory) => {
-    
-    //Después de 300ms del juego completado.. Muestra el modal con datos relevantes
-    setTimeout(() => {
-        const modalText = isVictory?`You found the word:`:`The correct word was:`;
-        gameModal.querySelector("img").src = `images/${isVictory?`victory`:`lost`}.gif`;
-        gameModal.querySelector("h4").innerText = `${isVictory?`Congrats!`:`Game Over!`}`;
+const gameOver = async (isVictory) => {
+    setTimeout(async () => {
+        const modalText = isVictory ? `You found the word:` : `The correct word was:`;
+        gameModal.querySelector("img").src = `images/${isVictory ? `victory` : `lost`}.gif`;
+        gameModal.querySelector("h4").innerText = `${isVictory ? `Congrats` : `Game Over`}!`;
         gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
         gameModal.classList.add("show");
+
+        // ✅ Actualizar progreso si ganó
+        if (isVictory) {
+            await actualizarProgreso('GANADA');
+        }
     }, 300);
 }
 
+// ✅ Actualizar progreso en la API
+async function actualizarProgreso(resultado) {
+    try {
+        const response = await fetch('/api/Juego/actualizar-progreso', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({
+                idTema: temaSeleccionado.idTema,
+                palabraActualIndex: palabraIndex,
+                resultado: resultado
+            })
+        });
+
+        if (response.ok) {
+            console.log('Progreso actualizado');
+            palabraIndex++;
+        } else if (response.status === 401) {
+            localStorage.removeItem('jwtToken');
+            window.location.href = 'login.html';
+        }
+    } catch (error) {
+        console.error('Error actualizando progreso:', error);
+    }
+}
+
 const initGame = (button, clickedLetter) => {
-    //Revisa si clickedLetter existe en currentWord
     if (currentWord.includes(clickedLetter)) {
-        //Muestra todas las letras correctas en la palabra display
         [...currentWord].forEach((letter, index) => {
             if (letter === clickedLetter) {
-                correctLetters.push(letter)
-               wordDisplay.querySelectorAll("li")[index].innerText = letter; 
-               wordDisplay.querySelectorAll("li")[index].classList.add("guessed"); 
+                correctLetters.push(letter);
+                wordDisplay.querySelectorAll("li")[index].innerText = letter;
+                wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
             }
         });
-    }else{
-        //Si das click en una letra que no existe entonces actualizo wrongGuessCount y la imagen hangman
+    } else {
         wrongGuessCount++;
         hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
     }
@@ -59,11 +127,11 @@ const initGame = (button, clickedLetter) => {
     button.disabled = true;
     guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
 
-    //Llama la función gameOver si alguna de las condiciones entra. 
     if (wrongGuessCount === maxGuesses) return gameOver(false);
     if (correctLetters.length === currentWord.length) return gameOver(true);
 }
-// Creando los botones del teclado
+
+// Crear teclado
 for (let i = 97; i <= 110; i++) {
     const char = String.fromCharCode(i);
     const button = document.createElement("button");
@@ -73,10 +141,9 @@ for (let i = 97; i <= 110; i++) {
 }
 
 const buttonNtilde = document.createElement("button");
-const ntilde = "ñ"; // La letra "ñ"
-buttonNtilde.innerText = ntilde;
+buttonNtilde.innerText = "ñ";
 keyboardDiv.appendChild(buttonNtilde);
-buttonNtilde.addEventListener("click", e => initGame(e.target, ntilde));
+buttonNtilde.addEventListener("click", e => initGame(e.target, "ñ"));
 
 for (let i = 111; i <= 122; i++) {
     const char = String.fromCharCode(i);
@@ -86,5 +153,16 @@ for (let i = 111; i <= 122; i++) {
     button.addEventListener("click", e => initGame(e.target, char));
 }
 
-getRandomWord();
-playAgainBtn.addEventListener("click", getRandomWord);
+// ✅ Play Again - Cargar siguiente palabra
+playAgainBtn.addEventListener("click", async function () {
+    if (palabraIndex < palabrasCifradas.length) {
+        currentWord = descifrarPalabra(palabrasCifradas[palabraIndex]);
+        resetGame();
+    } else {
+        alert('¡Completaste todas las palabras de este tema!');
+        window.location.href = 'temas.html';
+    }
+});
+
+// ✅ Inicializar juego
+cargarPalabrasTema();
