@@ -1,5 +1,6 @@
 wwwroot\images\ahorcado.png
 wwwroot\images\control.png
+wwwroot\images\Designer (2).png
 wwwroot\images\flama.png
 wwwroot\images\Flecha.png
 wwwroot\images\hangman-0.svg
@@ -13,14 +14,19 @@ wwwroot\images\hangman-7.svg
 wwwroot\images\lost.gif
 wwwroot\images\lupa.png
 wwwroot\images\mando.png
+wwwroot\images\Notificaciones.png
 wwwroot\images\racha.png
+wwwroot\images\rayo.png
+wwwroot\images\triangulo.png
+wwwroot\images\usuario.png
 wwwroot\images\victory.gif
 wwwroot\juego.html
-wwwroot\perfil.html
-wwwroot\scripts\style.css
-wwwroot\scripts\style_vistaTemas.css
-wwwroot\scripts\word-list.js
 wwwroot\login.html
+wwwroot\perfil.html
 wwwroot\racha.html
 wwwroot\scripts\script.js
+wwwroot\scripts\style.css
+wwwroot\scripts\style_temaIndex.css
+wwwroot\scripts\word-list.js
+wwwroot\index.html
 wwwroot\vistaTemas.html

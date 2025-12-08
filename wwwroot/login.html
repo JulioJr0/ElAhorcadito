@@ -401,7 +401,7 @@
         // Verificar si ya está autenticado
         const token = localStorage.getItem('jwtToken');
         if (token) {
-            window.location.href = 'vistaTemas.html'; // Cambiar a tu página de inicio "inicio.html"
+            window.location.href = 'index.html'; // Cambiar a tu página de inicio "inicio.html"
         }
 
         const opcionLogin = document.getElementById("opcion-login");
@@ -455,7 +455,7 @@
                 if (response.ok) {
                     const token = await response.text();
                     localStorage.setItem('jwtToken', token);
-                    window.location.href = 'vistaTemas.html';
+                    window.location.href = 'index.html';
                 } else {
                     alert('Correo o contraseña incorrecta');
                 }

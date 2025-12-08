@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="scripts/style_temaIndex.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Notificaciones</p>
+            <a href="#">
+                <img src="images/Notificaciones.png" />
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <img src="images/hangman-6.svg" />
+            <h1>El AHORCADITO</h1>
+        </div>
+        <div class="btns">
+            <button id="naranga"><img src="images/flama.png" />¡Jugar Reto de hoy!</button>
+            <div class="btn">
+                <button id="todosLosTemas"><img src="images/triangulo.png">Todos los temas</button>
+                <button id="racha"><img src="images/rayo.png">Racha</button>
+            </div>
+            <button id="perfil"><img src="images/usuario.png" />Mi perfil</button>
+        </div>
+    </main>
+    <script>
+        document.getElementById('naranja').addEventListener('click', function (e) {
+            window.location.href = 'juego.html';
+        });
+        document.getElementById("todosLosTemas").addEventListener("click", function (e) {
+            window.location.href = 'vistaTemas.html';
+        });
+        document.getElementById("racha").addEventListener("click", function (e) {
+            window.location.href = 'racha.html';
+        });
+    </script>
+</body>
+</html>

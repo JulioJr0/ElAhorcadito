@@ -68,6 +68,12 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+//login 
+var options = new DefaultFilesOptions();
+options.DefaultFileNames.Clear();
+options.DefaultFileNames.Add("login.html");
+options.DefaultFileNames.Add("index.html");
+app.UseDefaultFiles(options);
 
 
 

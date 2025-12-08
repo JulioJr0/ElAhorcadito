@@ -20,6 +20,90 @@ h1{
     text-align: center;
     font-size:3em;
 }
+header{
+    height:50px;
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+header nav{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
+header nav  a{
+    background-color:#ED781F;
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+header nav  a img{
+    width: 20px;
+    height: 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;  
+}
+main .titulo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+}
+main .titulo h1{
+    margin:10px 0px 0px 0px;
+}
+main .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .btn {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+main .btns button{
+    box-sizing: border-box;
+    background-color:#008479;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 400px;
+    height:80px;
+    border-radius:10px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+}
+main .btns button img{
+    width: 60px;
+    height: 60px;
+}
+#naranga{
+    background-color: #ED781F;
+}
 .boteUno{
     margin: 0px;
     padding: 0px;
@@ -224,7 +308,6 @@ footer a img{
   width: 95%;
   margin: 0px auto;
 }
-
 @media (max-width: 767px) {
     html, body {
         margin: 0;
@@ -315,11 +398,54 @@ footer a img{
     footer{
         width:95%;
         height:50px;
+
+    }
+    header{
+        margin: 0px;
+        height:40px;
+    }
+    header a {
+        width: 20px;
+        height: 20px;
+    }
+    main .titulo img {
+        width: 200px;
+        height: 300px;
+    }
+    #naranga{
+        font-size: 1em;
+    }
+    main .btns {
+     width: 300px;
+     gap: 5px;
+    }
+    main .btns button {
+        width: 250px;
+        height:70px;
+        font-size:10px;
+         background-color:#00796b;
+    }
+    main .btns button img {
+        width: 30px;
+        height:30px;
+    }
+    main .btn{
+        width: 300px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main .btn button{
+        flex-direction:column;
+        width: 120px;
+    }
+    #perfil{
+        font-size: 1em;
+    }
 }
+   
 @media(min-width:850px)  {
     .retoHoy #desafio{
         grid-column: span 2;
         width: 100%;
     }
-}
 }

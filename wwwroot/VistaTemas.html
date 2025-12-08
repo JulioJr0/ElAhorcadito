@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="scripts/style_vistaTemas.css" type="text/css">
+    <link rel="stylesheet" href="scripts/style_temaIndex.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temas</title>
 </head>
@@ -211,9 +211,8 @@
     });
 
     // ✅ Botón regresar
-    document.querySelector('footer a').addEventListener('click', function(e) {
-        e.preventDefault();
-        window.history.back();
+        document.querySelector('footer a').addEventListener('click', function (e) {
+            window.location.href = "index.html"
     });
 
     // Cargar temas al iniciar
