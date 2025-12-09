@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-* {
+* { /*hoja de estilos llamada "style.css"*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,15 +17,59 @@ body {
     color: #fff;
 }
 
+.game-header {
+    display:flex; 
+    justify-content: space-between;
+    align-items: center; /* Alinear verticalmente */
+    width: 100%; /* Ocupar todo el ancho */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    position: absolute; /* Para sacarlo del flujo y colocarlo arriba del container */
+    top: 20px;
+    left: 0;
+   padding: 0 40px; /* Mismo padding horizontal que el container */
+}
+
+.btn-regresar {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+   cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.reto-badge {
+    display: flex;
+  align-items: center;
+   background-color: #FF7800; /* Color naranja distintivo */
+   border-radius: 20px;
+   padding: 5px 15px;
+    font-size: 1rem;
+   font-weight: 700;
+}
+
+    .reto-badge span {
+        margin-right: 5px;
+    }
+
+
+
+
 .container {
     width: 850px;
     background: #00605A;
     display: flex;
     gap: 70px;
-    align-items: flex-end;
+    align-items: flex-start; /* Se cambia a flex-start para mejor control vertical */
     padding: 60px 40px;
     border-radius: 50px;
+    position: relative; /* Esencial para que el .game-header absoluto se posicione */
+   padding-top: 100px; /* Ajuste para dejar espacio al header */
 }
+
+
+
 
 .hangman-box img {
     max-width: 270px;
@@ -37,8 +81,15 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-
+.hearts-container {
+    /* Nueva sección para asegurar que los corazones estén bien posicionados */
+    margin-bottom: 20px; /* Espacio debajo de los corazones */
+    display: flex;
+    gap: 5px;
+}
 .word-display {
+    /* Ajustar margen para separarlo de los corazones */
+    margin-bottom: 30px; /* Menos margen que antes, ya que el contenedor ya tiene espacio */
     display: flex;
     gap: 10px;
     list-style: none;
@@ -46,14 +97,15 @@ body {
     justify-content: center;
 }
 
-.word-display .letter {
-    width: 28px;
+    .word-display .letter {
+        margin-bottom: 10px;
+        /*width: 28px;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 40px;
-    border-bottom: 3px solid #fff;
-}
+    border-bottom: 3px solid #fff;*/
+    }
 
 .word-display .letter.guessed {
     border-color: transparent;
@@ -67,7 +119,12 @@ body {
     font-weight: 500;
     margin-bottom: 15px;
 }
-
+.game-box {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center;
+    width: 100%;
+}
 .game-box h4 b {
     font-weight: 600;
     color: #FF7800;

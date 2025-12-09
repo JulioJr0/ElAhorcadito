@@ -160,6 +160,7 @@
         retoHoy.style.cursor = 'pointer';
         retoHoy.onclick = () => {
             sessionStorage.setItem('temaSeleccionado', JSON.stringify(temaDiario));
+            sessionStorage.setItem('esRetoDiario', 'true');
             window.location.href = 'juego.html';
         };
 
@@ -186,6 +187,7 @@
 
             card.onclick = () => {
                 sessionStorage.setItem('temaSeleccionado', JSON.stringify(tema));
+                sessionStorage.setItem('esRetoDiario', 'false');
                 window.location.href = 'juego.html';
             };
 

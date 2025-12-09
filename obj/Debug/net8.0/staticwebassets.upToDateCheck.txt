@@ -20,6 +20,7 @@ wwwroot\images\rayo.png
 wwwroot\images\triangulo.png
 wwwroot\images\usuario.png
 wwwroot\images\victory.gif
+wwwroot\index.html
 wwwroot\juego.html
 wwwroot\login.html
 wwwroot\perfil.html
@@ -28,5 +29,4 @@ wwwroot\scripts\script.js
 wwwroot\scripts\style.css
 wwwroot\scripts\style_temaIndex.css
 wwwroot\scripts\word-list.js
-wwwroot\index.html
 wwwroot\vistaTemas.html

@@ -11,10 +11,16 @@ namespace ElAhorcadito.Controllers.api
     public class AuthController : ControllerBase
     {
         public IAuthService Service { get; }
+        public ITemaService TemaService { get; }
+        public IBackgroundTaskQueue TaskQueue { get; }
+        public IServiceScopeFactory ScopeFactory { get; }
 
-        public AuthController(IAuthService service)
+        public AuthController(IAuthService service, ITemaService temaService, IBackgroundTaskQueue taskQueue, IServiceScopeFactory scopeFactory)
         {
             Service = service;
+            TemaService = temaService;
+            TaskQueue = taskQueue;
+            ScopeFactory = scopeFactory;
         }
 
         [HttpPost("register")]//ok
@@ -25,7 +31,7 @@ namespace ElAhorcadito.Controllers.api
         }
 
         [HttpPost("login")]//ok
-        public IActionResult Login(LoginDTO dto)
+        public async Task<IActionResult> Login(LoginDTO dto)
         {
             var (token, refreshToken) = Service.IniciarSesion(dto);
             if (token == string.Empty)
@@ -37,6 +43,24 @@ namespace ElAhorcadito.Controllers.api
                 HttpOnly = true,
                 Secure = false,
                 SameSite = SameSiteMode.Lax
+            });
+
+            // ✅ ENCOLAR TAREA EN BACKGROUND CON SCOPE CORRECTO
+            await TaskQueue.QueueBackgroundWorkItemAsync(async token =>
+            {
+                using (var scope = ScopeFactory.CreateScope())
+                {
+                    var temaService = scope.ServiceProvider.GetRequiredService<ITemaService>();
+
+                    try
+                    {
+                        await temaService.CrearTemasFaltantes();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error creando temas en background: {ex.Message}");
+                    }
+                }
             });
 
             return Ok(token); 

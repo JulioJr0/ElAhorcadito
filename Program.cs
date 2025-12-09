@@ -49,6 +49,10 @@ builder.Services.AddTransient<ITemaService, TemaService>();
 builder.Services.AddTransient<IRachaService, RachaService>();
 builder.Services.AddTransient<IGeminiService, GeminiService>();
 
+// AGREGAR: Background Task Queue
+builder.Services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>();
+builder.Services.AddHostedService<QueuedHostedService>();
+
 // Helpers
 builder.Services.AddTransient<JwtHelper>();
 

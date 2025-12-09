@@ -14,16 +14,19 @@ namespace ElAhorcadito.Services
         public IRepository<RefreshTokens> RefreshTokensRepository { get; }
         public IMapper Mapper { get; }
         public JwtHelper JwtHelper { get; }
+        public ITemaService TemaService { get; }
 
         public AuthService(IRepository<Usuarios> repository,
             IRepository<RefreshTokens> refreshTokensRepository,
             IMapper mapper,
-            JwtHelper jwtHelper)
+            JwtHelper jwtHelper,
+            ITemaService temaService)
         {
             Repository = repository;
             RefreshTokensRepository = refreshTokensRepository;
             Mapper = mapper;
             JwtHelper = jwtHelper;
+            TemaService = temaService;
         }
 
         public void RegistrarUsuario(IRegistroDTO dto)

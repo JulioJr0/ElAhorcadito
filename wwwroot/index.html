@@ -21,7 +21,7 @@
             <h1>El AHORCADITO</h1>
         </div>
         <div class="btns">
-            <button id="naranga"><img src="images/flama.png" />¡Jugar Reto de hoy!</button>
+            <button id="naranja"><img src="images/flama.png" />¡Jugar Reto de hoy!</button>
             <div class="btn">
                 <button id="todosLosTemas"><img src="images/triangulo.png">Todos los temas</button>
                 <button id="racha"><img src="images/rayo.png">Racha</button>
@@ -30,15 +30,134 @@
         </div>
     </main>
     <script>
-        document.getElementById('naranja').addEventListener('click', function (e) {
-            window.location.href = 'juego.html';
+        // ✅ Verificar autenticación
+        const token = localStorage.getItem('jwtToken');
+        if (!token) {
+            window.location.href = 'login.html';
+        }
+
+        // ✅ Función para renovar token si es necesario
+        async function verificarYRenovarToken() {
+            try {
+                const response = await fetch('/api/Auth/renew', {
+                    method: 'GET',
+                    credentials: 'include'
+                });
+
+                if (response.ok) {
+                    const newToken = await response.text();
+                    localStorage.setItem('jwtToken', newToken);
+                    return newToken;
+                } else {
+                    // Token expirado, redirigir a login
+                    localStorage.removeItem('jwtToken');
+                    window.location.href = 'login.html';
+                    return null;
+                }
+            } catch (error) {
+                console.error('Error renovando token:', error);
+                return token;
+            }
+        }
+
+        //// Cargar notificaciones pendientes (contador)
+        //async function cargarNotificaciones() {
+        //    try {
+        //        const response = await fetch('/api/Notificaciones/pendientes', {
+        //            headers: { 'Authorization': `Bearer ${token}` }
+        //        });
+
+        //        if (response.ok) {
+        //            const notificaciones = await response.json();
+        //            const badge = document.getElementById('badge-notificaciones');
+
+        //            if (notificaciones && notificaciones.length > 0) {
+        //                badge.textContent = notificaciones.length;
+        //                badge.style.display = 'inline-block';
+        //            } else {
+        //                badge.style.display = 'none';
+        //            }
+        //        } else if (response.status === 401) {
+        //            await verificarYRenovarToken();
+        //        }
+        //    } catch (error) {
+        //        console.error('Error cargando notificaciones:', error);
+        //    }
+        //}
+
+        // ✅ Iniciar reto diario
+        document.getElementById('naranja').addEventListener('click', async function (e) {
+            e.preventDefault();
+
+            try {
+                const response = await fetch('/api/Juego/iniciar-diario', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+
+                if (response.ok) {
+                    const retoDiario = await response.json();
+
+                    // Guardar tema en sessionStorage
+                    const temaParaJuego = {
+                        idTema: retoDiario.idTema,
+                        nombre: retoDiario.nombreTema,
+                        descripcion: `Reto diario del día`,
+                        palabrasCompletadas: retoDiario.palabrasCompletadas,
+                        totalPalabras: retoDiario.totalPalabras,
+                        porcentajeProgreso: (retoDiario.palabrasCompletadas / retoDiario.totalPalabras) * 100,
+                        palabrasCifradas: [] // Se llenará en juego.html
+                    };
+
+                    sessionStorage.setItem('temaSeleccionado', JSON.stringify(temaParaJuego));
+                    sessionStorage.setItem('esRetoDiario', 'true');
+
+                    // Verificar si ya completó el reto
+                    if (retoDiario.yaCompletadoHoy) {
+                        alert('¡Ya completaste el reto de hoy! Vuelve mañana para un nuevo desafío.');
+                        return;
+                    }
+
+                    window.location.href = 'juego.html';
+                } else if (response.status === 401) {
+                    await verificarYRenovarToken();
+                    this.click(); // Reintentar
+                } else {
+                    alert('Error al cargar el reto diario');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error de conexión al cargar el reto');
+            }
         });
+
+        // ✅ Ver todos los temas
         document.getElementById("todosLosTemas").addEventListener("click", function (e) {
+            e.preventDefault();
             window.location.href = 'vistaTemas.html';
         });
+
+        // ✅ Ver racha
         document.getElementById("racha").addEventListener("click", function (e) {
+            e.preventDefault();
             window.location.href = 'racha.html';
         });
+
+        // ✅ Ver perfil
+        document.getElementById("perfil").addEventListener("click", function (e) {
+            e.preventDefault();
+            window.location.href = 'perfil.html';
+        });
+
+        //// Cargar notificaciones al iniciar
+        //document.addEventListener('DOMContentLoaded', function () {
+        //    cargarNotificaciones();
+
+        //    // Actualizar notificaciones cada 30 segundos
+        //    setInterval(cargarNotificaciones, 30000);
+        //});
+
+        // ✅ Verificar token al cargar la página
+        verificarYRenovarToken();
     </script>
 </body>
 </html>

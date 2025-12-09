@@ -1,3 +1,4 @@
+// script "script.js"
 // ✅ Verificar autenticación
 const token = localStorage.getItem('jwtToken');
 if (!token) {
