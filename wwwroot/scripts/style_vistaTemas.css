@@ -1,0 +1,451 @@
+﻿html{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-color: #008479;
+}
+body{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color:#00796b;
+    width: 80%;
+    border-radius:40px;
+}
+h1{
+    margin: 0px;
+    margin-bottom:20px;
+    text-align: center;
+    font-size:3em;
+}
+header{
+    height:50px;
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+header nav{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
+header nav  a{
+    background-color:#ED781F;
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+header nav  a img{
+    width: 20px;
+    height: 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;  
+}
+main .titulo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+}
+main .titulo h1{
+    margin:10px 0px 0px 0px;
+}
+main .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .btn {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+main .btns button{
+    box-sizing: border-box;
+    background-color:#008479;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 400px;
+    height:80px;
+    border-radius:10px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+}
+main .btns button img{
+    width: 60px;
+    height: 60px;
+}
+#naranga{
+    background-color: #ED781F;
+}
+.boteUno{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height:80vh;
+}
+footer{
+    margin: 0px auto;
+    width: 80%;
+    height:60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+   
+}
+footer a{
+    background-color: #cfa32a;
+    color:white;
+    text-decoration: none;
+    display: flex;
+    border-radius:40px;
+    height:50px;
+    width:400px;
+    justify-content: center;
+    align-items: center;
+    font-size:1em;
+    margin:0px;
+}
+footer a img{
+    width:30px;
+    height:30px;
+}
+.boteUno p{
+    margin: 0px auto;
+    width:70%;
+    margin-bottom:10px;
+    font-size:1em;
+}
+.retoHoy{
+    background-color:#ED781F;
+    width:75%;
+    margin: 0px auto;
+    height:200px;
+    border-radius:40px;
+    box-shadow: inset 0 0 10px rgba(0.6, 0, 0, 0.5);
+    display: grid;
+    grid-template-rows: repeat(6,auto);
+    grid-template-columns: auto 1fr;
+    box-sizing: border-box;
+    padding:20px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+.retoHoy img{
+    max-width:50px;
+    opacity:0.6;
+    margin: 10px;
+}
+.retoHoy .temma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.retoHoy .temma h4{
+    margin: 0px;
+    font-size:1.5em;
+}
+.retoHoy .temma p{
+    margin: 0px;
+    padding: 0px;
+    color: #823800;
+    text-align: left;
+    font-size: 1em;
+}
+.retoHoy q{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1em;
+}
+.retoHoy #desafio{
+    background-color: #ed8738;
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.5em;
+    width: 50%;
+    border-radius: 10px;
+}
+.progress-container {
+  grid-column: span 2;
+  height:10px; 
+  background-color: #6b2d00; 
+  border-radius: 10px; 
+  overflow: hidden; 
+}
+.progress-bar {
+  height: 100%;
+  background-color: #cfa32a; /* Color dorado (progreso) */
+  border-radius: 10px;       /* Bordes redondeados */
+}
+.retoHoy samp {
+    grid-column: span 2;
+    margin-left: 10px;
+    font-size:1.5em;
+    display: flex;
+    justify-content:space-between;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color:#008479; /* Color verde azulado */
+  border-radius:40px;
+  padding:10px;
+  height:15px;
+  width:75%;
+  margin: 0px auto;
+   
+}
+.search-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size:1em;
+  outline: none;
+  color: white;
+}
+.search-icon img {
+  width:20px;   /* Ajusta el tamaño de la imagen */
+  height:20px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.cartas-con{
+    display: flex;
+    flex-direction:row;
+    gap:5px;
+    width:95%;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    overflow: auto;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.cartas{
+    background-color:#008479;
+    width:360px;
+    margin: 0px auto;
+    height:150px;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-template-rows: repeat(5,1fr);
+    border-radius:20px;
+    box-sizing: border-box;
+}
+.cartas img{    
+    width: 50px;
+    padding:5px;
+    opacity: 0.4;
+}
+.cartas .temma-cartas{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+.cartas .temma-cartas h4{
+    margin: 0px;
+    font-size:15px;
+    margin-left:10px;
+    padding: 0px;
+}
+.cartas .temma-cartas p{
+    margin: 0px;
+    padding: 0px;
+    color:#ED781F;
+    font-size:10px;
+    margin-left:10px;
+}
+.cartas q{
+    grid-column: span 2;
+    font-size:15px;
+    text-align: center;
+    margin-top:10px;
+    font-family: "Open Sans", sans-serif;
+}
+.cartas samp {
+    grid-column: span 2;
+    margin:10px ;
+    font-size:10px;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    justify-content:space-between;
+
+}
+.cartas .progress-container {
+  background-color:#00796b;
+  height:10px;
+  width: 95%;
+  margin: 0px auto;
+}
+@media (max-width: 767px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        background-color: #008479;
+    }
+    body{
+        width: 95%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    h1{
+        margin:10px 0px 10px 0px;
+        font-size:2em;
+         font-family: "Open Sans", sans-serif;
+        text-align: center;
+    }
+    .boteUno{
+        height:87vh;
+    }
+    .retoHoy{
+        box-sizing: border-box;
+        width: 95%;
+        height: 170px;
+    }
+    .retoHoy img{
+        max-width:40px;
+    }
+    .temma{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .retoHoy .temma h4{
+         font-family: "Open Sans", sans-serif;
+        font-size:1em;
+        margin: 0px;
+    }
+    .retoHoy .temma p{
+         font-family: "Open Sans", sans-serif;
+        font-size:10px;
+    }
+    .retoHoy #desafio{
+        background-color: #ed8738;
+        font-size: 1em;
+        width:95%;
+        grid-column: span 2;
+    }
+    .retoHoy samp{
+        font-size:10px;
+        padding: 5px;
+        font-family: "Open Sans", sans-serif;
+    }
+    .search-box {
+        background-color:#00796b; 
+        width:90%;
+    }
+    .boteUno p{
+        font-family: "Open Sans", sans-serif;
+        margin: 0px;
+        width:90%;
+        margin-bottom:20px;
+        padding-left:15px;
+    }
+    .cartas{
+        background-color:#00796b;
+    }
+    .cartas .temma-cartas{
+        gap: 20px;
+    }
+    .cartas q{
+        font-size:12px;
+    }
+    .cartas .progress-container {
+        background-color:#008479;
+    }
+    footer a{
+        width:100%;
+        font-size:1em;
+        font-family: "Open Sans", sans-serif;
+    }
+    footer{
+        width:95%;
+        height:50px;
+
+    }
+    header{
+        margin: 0px;
+        height:40px;
+    }
+    header a {
+        width: 20px;
+        height: 20px;
+    }
+    main .titulo img {
+        width: 200px;
+        height: 300px;
+    }
+    #naranga{
+        font-size: 1em;
+    }
+    main .btns {
+     width: 300px;
+     gap: 5px;
+    }
+    main .btns button {
+        width: 250px;
+        height:70px;
+        font-size:10px;
+         background-color:#00796b;
+    }
+    main .btns button img {
+        width: 30px;
+        height:30px;
+    }
+    main .btn{
+        width: 300px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main .btn button{
+        flex-direction:column;
+        width: 120px;
+    }
+    #perfil{
+        font-size: 1em;
+    }
+}
+   
+@media(min-width:850px)  {
+    .retoHoy #desafio{
+        grid-column: span 2;
+        width: 100%;
+    }
+}

@@ -504,13 +504,15 @@
                     });
                     generarDiasSemana(diasCompletados);
 
-                    // Actualizar temas completados
-                    temasCompletadosElement.textContent = `${stats.temasCompletados}/7`;
-                    const porcentaje = Math.round((stats.temasCompletados / 7) * 100);
+                    //ACTUALIZAR TEMAS COMPLETADOS CON TEMAS TOTALES REALES
+                    temasCompletadosElement.textContent = `${stats.temasCompletados}/${stats.temasTotales}`;
+                    const porcentaje = stats.temasTotales > 0
+                        ? Math.round((stats.temasCompletados / stats.temasTotales) * 100)
+                        : 0;
                     porcentajeTemasElement.textContent = porcentaje + "%";
                     barraProgresoElement.style.width = porcentaje + "%";
 
-                    // Actualizar palabras adivinadas
+                    //ACTUALIZAR PALABRAS ADIVINADAS (YA INCLUYE TODAS)
                     palabrasAdivinadasElement.textContent = stats.palabrasTotales;
 
                 } else if (response.status === 401) {

@@ -33,21 +33,16 @@ body {
     height:40px;
     justify-content: space-between;
 }
-.btn-regresar {
+.btn-regresar{
     background-color: #008479;
     border: 0px;
-    border-radius: 20px;
-    height: 30px;
-    margin-top: 10px;
-    margin-left: 10px;
+    border-radius:20px;
+    height:30px;
+    margin-top:10px;
+    margin-left:10px;
     color: #fff;
-    width: 150px;
-    cursor: pointer;
-    font-weight: 600;
+    width:150px;
 }
-    .btn-regresar:hover {
-        background-color: #006b68;
-    }
 .reto-badge{
     background-color: #FF7800;
     display: flex;
@@ -68,15 +63,9 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-/**/
 .hearts-container{
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
-    gap: 5px;
-}
-.heart {
-    font-size: 1.5rem;
 }
 .word-display {
     display: flex;
@@ -84,8 +73,6 @@ body {
     list-style: none;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
 .word-display .letter {
@@ -144,31 +131,13 @@ body {
 }
 
 .keyboard button {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    background: #06973B;
-    border-radius: 10px;
-    text-transform: uppercase;
     padding: 7px;
     width: calc(100% / 8 - 5px);
-    transition: background-color 0.3s ease;
 }
-    .keyboard button:hover:not([disabled]) {
-        background: #8286c9;
-    }
-    .keyboard button.correct {
-        background-color: #06973B;
-    }
-    .keyboard button.incorrect {
-        background-color: #E84C3D;
-    }
-/*:where(.game-modal, .keyboard) button:hover {
+
+:where(.game-modal, .keyboard) button:hover {
     background: #8286c9;
-}*/
+}
 
 .game-modal {
     color: #000;
@@ -216,29 +185,10 @@ body {
 .game-modal p b{
     color: #5E63BA;
 }
-    .game-modal button {
-        padding: 12px 23px;
-        background: #06973B;
-        border: none;
-        border-radius: 10px;
-        color: #fff;
-        font-weight: 600;
-        cursor: pointer;
-        text-transform: uppercase;
-    }
-        .game-modal button:hover {
-            background: #8286c9;
-        }
-
-.game-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.game-modal button {
+    padding: 12px 23px;
 }
 
-.tema-text, .progreso-text {
-    text-align: center;
-}
 @media (max-width:500px){
    
     .container {

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorcadito Juego</title>
     <link rel="stylesheet" href="scripts/style.css">
-
 </head>
 <body>
     <!-- Modal de Game Over / Victoria -->
@@ -144,10 +143,7 @@
             wrongGuessCount = 0;
             hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
             //guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
-            keyboardDiv.querySelectorAll("button").forEach(btn => {
-                btn.disabled = false;
-                btn.classList.remove('correct', 'incorrect');
-            });
+            keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
             wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
             gameModal.classList.remove("show");
             actualizarCorazones();
@@ -268,7 +264,6 @@
         const initGame = (button, clickedLetter) => {
             // Revisar si la letra existe en la palabra
             if (currentWord.toLowerCase().includes(clickedLetter)) {
-                button.classList.add('correct');
                 // Mostrar todas las letras correctas
                 [...currentWord.toLowerCase()].forEach((letter, index) => {
                     if (letter === clickedLetter) {
@@ -279,7 +274,6 @@
                 });
             } else {
                 // Letra incorrecta: aumentar contador y actualizar imagen
-                button.classList.add('incorrect');
                 wrongGuessCount++;
                 hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
                 actualizarCorazones();

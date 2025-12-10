@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorcadito Juego</title>
-    <link rel="stylesheet" href="scripts/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Modal de Game Over / Victoria -->
@@ -31,14 +30,12 @@
 
         <!-- Caja del ahorcado -->
         <div class="hangman-box">
-            <img src="images/hangman-0.svg" alt="hangman-img">
+            <img src="hangman-0.svg" alt="hangman-img">
             <h1>EL AHORCADITO</h1>
         </div>
 
         <!-- Caja del juego -->
         <div class="game-box">
-            <!-- Display de la palabra -->
-            <ul class="word-display"></ul>
             <!-- Corazones (vidas) -->
             <div class="hearts-container">
                 <span class="heart">❤️</span>
@@ -49,7 +46,8 @@
                 <span class="heart">❤️</span>
             </div>
 
-
+            <!-- Display de la palabra -->
+            <ul class="word-display"></ul>
 
             <!-- Información del tema y progreso -->
             <div class="game-info">
@@ -58,10 +56,11 @@
             </div>
 
             <!-- Intentos incorrectos -->
-            <!--<h4 class="guesses-text">
-        Incorrect guesses:
-        <b>0 / 6</b>
-    </h4>-->
+            <h4 class="guesses-text">
+                Incorrect guesses:
+                <b>0 / 6</b>
+            </h4>
+
             <!-- Teclado -->
             <div class="keyboard"></div>
         </div>
@@ -70,23 +69,23 @@
     <script>
         // ✅ Verificar autenticación
         const token = localStorage.getItem('jwtToken');
-        if (!token) {
-            window.location.href = 'login.html';
-        }
+        // if (!token) {
+        //     window.location.href = 'login.html';
+        // }
 
-        // ✅ Obtener tema seleccionado
-        const temaSeleccionado = JSON.parse(sessionStorage.getItem('temaSeleccionado'));
-        const esRetoDiario = sessionStorage.getItem('esRetoDiario') === 'true';
+        // // ✅ Obtener tema seleccionado
+        // const temaSeleccionado = JSON.parse(sessionStorage.getItem('temaSeleccionado'));
+        // const esRetoDiario = sessionStorage.getItem('esRetoDiario') === 'true';
 
-        if (!temaSeleccionado) {
-            alert('No se seleccionó ningún tema');
-            window.location.href = 'vistaTemas.html';
-        }
+        // if (!temaSeleccionado) {
+        //     alert('No se seleccionó ningún tema');
+        //     window.location.href = 'vistaTemas.html';
+        // }
 
         // Elementos del DOM
         const hangmanImage = document.querySelector(".hangman-box img");
         const wordDisplay = document.querySelector(".word-display");
-        //const guessesText = document.querySelector(".guesses-text b");
+        const guessesText = document.querySelector(".guesses-text b");
         const keyboardDiv = document.querySelector(".keyboard");
         const gameModal = document.querySelector(".game-modal");
         const playAgainBtn = document.querySelector(".play-again");
@@ -143,11 +142,8 @@
             correctLetters = [];
             wrongGuessCount = 0;
             hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
-            //guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
-            keyboardDiv.querySelectorAll("button").forEach(btn => {
-                btn.disabled = false;
-                btn.classList.remove('correct', 'incorrect');
-            });
+            guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
+            keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
             wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
             gameModal.classList.remove("show");
             actualizarCorazones();
@@ -268,7 +264,6 @@
         const initGame = (button, clickedLetter) => {
             // Revisar si la letra existe en la palabra
             if (currentWord.toLowerCase().includes(clickedLetter)) {
-                button.classList.add('correct');
                 // Mostrar todas las letras correctas
                 [...currentWord.toLowerCase()].forEach((letter, index) => {
                     if (letter === clickedLetter) {
@@ -279,14 +274,13 @@
                 });
             } else {
                 // Letra incorrecta: aumentar contador y actualizar imagen
-                button.classList.add('incorrect');
                 wrongGuessCount++;
                 hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
                 actualizarCorazones();
             }
 
             button.disabled = true;
-            //guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
+            guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
 
             // Verificar condiciones de fin de juego
             if (wrongGuessCount === maxGuesses) return gameOver(false);

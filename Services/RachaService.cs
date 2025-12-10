@@ -9,14 +9,17 @@ namespace ElAhorcadito.Services
         public IRepository<Rachas> RachaRepository { get; }
         public IRepository<ProgresoTemas> ProgresoRepository { get; }
         public IRepository<Notificaciones> NotificacionRepository { get; }
+        public IRepository<Temas> TemasRepository { get; }
 
         public RachaService(IRepository<Rachas> rachaRepository,
             IRepository<ProgresoTemas> progresoRepository,
-            IRepository<Notificaciones> notificacionRepository)
+            IRepository<Notificaciones> notificacionRepository,
+            IRepository<Temas> temasRepository)
         {
             RachaRepository = rachaRepository;
             ProgresoRepository = progresoRepository;
             NotificacionRepository = notificacionRepository;
+            TemasRepository = temasRepository;
         }
 
         public void CheckAndExtendRacha(int idUsuario, int idTemaDiario)
@@ -80,17 +83,24 @@ namespace ElAhorcadito.Services
 
         public EstadisticasDTO GetEstadisticas(int idUsuario)
         {
-            var racha = RachaRepository.GetAll().FirstOrDefault(x => x.IdUsuario == idUsuario);
+            var palabrasTotales = ProgresoRepository.GetAll()
+                .Where(x => x.IdUsuario == idUsuario)
+                .Sum(x => x.PalabrasCompletadas ?? 0);
+
             var temasCompletados = ProgresoRepository.GetAll()
                 .Count(x => x.IdUsuario == idUsuario && x.PalabrasCompletadas >= 10);
 
+            var temasTotales = TemasRepository.GetAll().Count();
+
+            var racha = RachaRepository.GetAll().FirstOrDefault(x => x.IdUsuario == idUsuario);
             var progresoSemanal = CalcularProgresoSemanal(idUsuario);
 
             return new EstadisticasDTO
             {
                 DiasConsecutivos = racha?.DiasConsecutivos ?? 0,
-                PalabrasTotales = racha?.PalabrasTotales ?? 0,
+                PalabrasTotales = palabrasTotales,
                 TemasCompletados = temasCompletados,
+                TemasTotales = temasTotales,
                 ProgresoSemanal = progresoSemanal
             };
         }
