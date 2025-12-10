@@ -117,50 +117,6 @@ namespace ElAhorcadito.Services
             return (string.Empty, string.Empty);
         }
 
-        //public (string, string) RefreshToken(string refreshToken)
-        //{
-        //    var storedToken = RefreshTokensRepository.GetAll()
-        //        .FirstOrDefault(x => x.Token == refreshToken &&
-        //        !(x.Usado ?? false) &&
-        //        x.Expiracion > DateTime.UtcNow);
-
-        //    if (storedToken == null)
-        //    {
-        //        return (string.Empty, string.Empty);
-        //    }
-
-        //    storedToken.Usado = true;
-        //    RefreshTokensRepository.Update(storedToken);
-
-        //    var usuario = Repository.Get(storedToken.IdUsuario);
-        //    if (usuario == null)
-        //    {
-        //        return (string.Empty, string.Empty);
-        //    }
-
-        //    List<Claim> claims = [
-        //        new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
-        //        new Claim("Id", usuario.Id.ToString()),
-        //        new Claim(ClaimTypes.Name, usuario.NombreUsuario),
-        //        new Claim(ClaimTypes.Email, usuario.Email)
-        //    ];
-
-        //    var newToken = JwtHelper.GenerateJwtToken(claims);
-        //    var newRefreshToken = Guid.NewGuid().ToString();
-
-        //    var newRefreshEntity = new RefreshTokens
-        //    {
-        //        IdUsuario = usuario.Id,
-        //        Token = newRefreshToken,
-        //        Expiracion = DateTime.UtcNow.AddMonths(3),
-        //        Creado = DateTime.UtcNow,
-        //        Usado = false
-        //    };
-        //    RefreshTokensRepository.Insert(newRefreshEntity);
-
-        //    return (newToken, newRefreshToken);
-        //}
-
         public IPerfilDTO? GetPerfil(int idUsuario)
         {
             var usuario = Repository.Get(idUsuario);
@@ -180,10 +136,5 @@ namespace ElAhorcadito.Services
                 Repository.Update(usuario);
             }
         }
-
-
-
-
-
     }
 }

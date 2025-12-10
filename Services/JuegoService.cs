@@ -154,13 +154,5 @@ namespace ElAhorcadito.Services
                 RachaService.CheckAndExtendRacha(idUsuario, temaDiario.Id);
             }
         }
-
-
-
-
-
-
-
-
     }
 }

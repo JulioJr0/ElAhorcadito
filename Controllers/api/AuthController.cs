@@ -45,7 +45,7 @@ namespace ElAhorcadito.Controllers.api
                 SameSite = SameSiteMode.Lax
             });
 
-            // ✅ ENCOLAR TAREA EN BACKGROUND CON SCOPE CORRECTO
+            //ENCOLAR TAREA EN BACKGROUND CON SCOPE
             await TaskQueue.QueueBackgroundWorkItemAsync(async token =>
             {
                 using (var scope = ScopeFactory.CreateScope())
@@ -93,17 +93,6 @@ namespace ElAhorcadito.Controllers.api
             return Unauthorized();
         }
 
-        //[HttpPost("refresh-token")]
-        //public IActionResult RefreshToken([FromBody] string refreshToken)
-        //{
-        //    var (newToken, newRefreshToken) = Service.RefreshToken(refreshToken);
-        //    if (newToken == string.Empty)
-        //    {
-        //        return Unauthorized("Refresh token inválido o expirado");
-        //    }
-        //    return Ok(new { token = newToken, refreshToken = newRefreshToken });
-        //}
-
         [Authorize]
         [HttpGet("perfil")]//ok
         public IActionResult GetPerfil()
@@ -128,10 +117,5 @@ namespace ElAhorcadito.Controllers.api
             Service.ActualizarPreferencias(idUsuario, dto);
             return Ok();
         }
-
-
-
-
-
     }
 }

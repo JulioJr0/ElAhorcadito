@@ -103,7 +103,7 @@
         </a>
     </footer>
     <script>
-    // ✅ Verificar autenticación
+    //Verificar autenticación
     const token = localStorage.getItem('jwtToken');
     if (!token) {
         window.location.href = 'login.html';
@@ -112,7 +112,7 @@
     let pageNumber = 1;
     let todosLosTemas = [];
 
-    // ✅ Cargar temas desde la API
+    //Cargar temas desde la API
     async function cargarTemas() {
         try {
             const response = await fetch(`/api/Temas/pagina/${pageNumber}`, {
@@ -133,7 +133,7 @@
         }
     }
 
-    // ✅ Mostrar temas en el DOM
+    //Mostrar temas en el DOM
     function mostrarTemas(temas) {
         const container = document.querySelector('.cartas-con');
         const retoHoy = document.querySelector('.retoHoy');
@@ -197,7 +197,7 @@
         resultadoText.textContent = `${temas.length} resultado${temas.length !== 1 ? 's' : ''} encontrado${temas.length !== 1 ? 's' : ''}`;
     }
 
-    // ✅ Buscar temas
+    //Buscar temas
     const searchInput = document.querySelector('.search-box input');
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase();
@@ -212,7 +212,7 @@
         }
     });
 
-    // ✅ Botón regresar
+    // Botón regresar
         document.querySelector('footer a').addEventListener('click', function (e) {
             window.location.href = "index.html"
     });

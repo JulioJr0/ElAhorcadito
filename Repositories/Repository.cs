@@ -42,6 +42,5 @@ namespace ElAhorcadito.Repositories
                 Context.SaveChanges();
             }
         }
-
     }
 }

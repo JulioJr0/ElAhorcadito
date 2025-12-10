@@ -58,9 +58,7 @@ builder.Services.AddTransient<JwtHelper>();
 
 // Validators
 builder.Services.AddValidatorsFromAssemblyContaining<RegistroDTOValidator>();
-
 builder.Services.AddControllers();
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -68,7 +66,6 @@ builder.Services.AddCors(options =>
         policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
     });
 });
-
 
 var app = builder.Build();
 
@@ -78,8 +75,6 @@ options.DefaultFileNames.Clear();
 options.DefaultFileNames.Add("login.html");
 options.DefaultFileNames.Add("index.html");
 app.UseDefaultFiles(options);
-
-
 
 app.UseFileServer();
 app.UseAuthentication();

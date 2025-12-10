@@ -15,7 +15,7 @@
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            _logger.LogInformation("Queued Hosted Service is running.");
+            _logger.LogInformation("Queued Hosted Service está corriendo");
 
             await BackgroundProcessing(stoppingToken);
         }
@@ -32,18 +32,18 @@
                 }
                 catch (OperationCanceledException)
                 {
-                    // Prevent throwing if stoppingToken was signaled
+                    //
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(ex, "Error occurred executing task work item.");
+                    _logger.LogError(ex, "Error mientras se ejecutó la tarea del item.");
                 }
             }
         }
 
         public override async Task StopAsync(CancellationToken stoppingToken)
         {
-            _logger.LogInformation("Queued Hosted Service is stopping.");
+            _logger.LogInformation("Queued Hosted Service está detenido");
             await base.StopAsync(stoppingToken);
         }
     }

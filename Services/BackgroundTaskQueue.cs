@@ -11,7 +11,6 @@ namespace ElAhorcadito.Services
     public class BackgroundTaskQueue : IBackgroundTaskQueue
     {
         private readonly Channel<Func<CancellationToken, ValueTask>> _queue;
-
         public BackgroundTaskQueue(int capacity = 100)
         {
             var options = new BoundedChannelOptions(capacity)
@@ -27,7 +26,6 @@ namespace ElAhorcadito.Services
             {
                 throw new ArgumentNullException(nameof(workItem));
             }
-
             await _queue.Writer.WriteAsync(workItem);
         }
 

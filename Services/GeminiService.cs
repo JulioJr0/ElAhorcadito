@@ -19,10 +19,6 @@ namespace ElAhorcadito.Services
         {
             var apiKey = Configuration["GeminiSettings:ApiKey"];
             var apiUrl = $"{Configuration["GeminiSettings:ApiUrl"]}?key={apiKey}";
-
-            //var apiUrl = $"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={apiKey}";
-            //var apiUrl = $"https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key={apiKey}";
-
             var prompt = @"Genera un tema ÚNICO, CREATIVO y POCO COMÚN para un juego de ahorcado. 
             
             REQUISITOS IMPORTANTES:
@@ -79,29 +75,29 @@ namespace ElAhorcadito.Services
 
             try
             {
-                Console.WriteLine("🔄 Llamando a Gemini API...");
+                Console.WriteLine("Llamando a Gemini API...");
 
                 var response = await HttpClient.PostAsync(apiUrl, content);
                 var responseBody = await response.Content.ReadAsStringAsync();
 
-                // ✅ MOSTRAR RESPUESTA COMPLETA PARA DEBUG
+                //probando api de gemini
                 Console.WriteLine("=== RESPUESTA DE GEMINI ===");
                 Console.WriteLine(responseBody);
                 Console.WriteLine("===========================");
 
                 if (!response.IsSuccessStatusCode)
                 {
-                    Console.WriteLine($"❌ Error HTTP {response.StatusCode}: {responseBody}");
+                    Console.WriteLine($"Error HTTP {response.StatusCode}: {responseBody}");
                     return GenerarTemaRespaldo();
                 }
 
                 var jsonResponse = JsonDocument.Parse(responseBody);
 
-                // ✅ VERIFICAR SI HAY CONTENIDO EN LA RESPUESTA
+                //si la respuesta tiene contenido
                 if (!jsonResponse.RootElement.TryGetProperty("candidates", out var candidates) ||
                     candidates.GetArrayLength() == 0)
                 {
-                    Console.WriteLine("❌ Gemini no devolvió candidatos");
+                    Console.WriteLine("Gemini no devolvió candidatos");
                     return GenerarTemaRespaldo();
                 }
 
@@ -111,22 +107,22 @@ namespace ElAhorcadito.Services
                     .GetProperty("text")
                     .GetString() ?? "";
 
-                Console.WriteLine($"📝 Texto recibido: {textResponse.Substring(0, Math.Min(200, textResponse.Length))}...");
+                Console.WriteLine($"Texto recibido: {textResponse.Substring(0, Math.Min(200, textResponse.Length))}...");
 
-                // ✅ LIMPIAR RESPUESTA (quitar markdown si viene)
+                //LIMPIAR RESPUESTA (quitar markdown si viene)
                 textResponse = textResponse
                     .Replace("```json", "")
                     .Replace("```", "")
                     .Trim();
 
-                // ✅ PARSEAR JSON
+                //PARSEAR JSON
                 var resultado = JsonSerializer.Deserialize<JsonElement>(textResponse);
 
                 if (!resultado.TryGetProperty("tema", out var temaElement) ||
                     !resultado.TryGetProperty("descripcion", out var descripcionElement) ||
                     !resultado.TryGetProperty("palabras", out var palabrasElement))
                 {
-                    Console.WriteLine("❌ JSON incompleto, faltan propiedades requeridas");
+                    Console.WriteLine("JSON incompleto, faltan propiedades requeridas");
                     return GenerarTemaRespaldo();
                 }
 
@@ -139,39 +135,36 @@ namespace ElAhorcadito.Services
                     .Take(10)
                     .ToList();
 
-                // ✅ VALIDAR QUE TENEMOS 10 PALABRAS
+                //VALIDAR QUE SON 10 PALABRAS
                 if (palabras.Count < 10)
                 {
-                    Console.WriteLine($"⚠️ Solo se recibieron {palabras.Count} palabras válidas, usando respaldo");
+                    Console.WriteLine($"Solo se recibieron {palabras.Count} palabras válidas, usando respaldo");
                     return GenerarTemaRespaldo();
                 }
-
-                Console.WriteLine($"✅ Tema generado: {tema} con {palabras.Count} palabras");
+                Console.WriteLine($"Tema generado: {tema} con {palabras.Count} palabras");
                 return (tema, descripcion, palabras);
             }
             catch (HttpRequestException ex)
             {
-                Console.WriteLine($"❌ Error de conexión con Gemini: {ex.Message}");
+                Console.WriteLine($"Error de conexión con Gemini: {ex.Message}");
                 return GenerarTemaRespaldo();
             }
             catch (JsonException ex)
             {
-                Console.WriteLine($"❌ Error parseando JSON de Gemini: {ex.Message}");
+                Console.WriteLine($"Error parseando JSON de Gemini: {ex.Message}");
                 return GenerarTemaRespaldo();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Error inesperado en Gemini: {ex.Message}");
-                Console.WriteLine($"Stack Trace: {ex.StackTrace}");
+                Console.WriteLine($"Error inesperado en Gemini: {ex.Message}");
                 return GenerarTemaRespaldo();
             }
         }
 
-        // ✅ MÉTODO AUXILIAR: Generar tema de respaldo
+        //Generar tema de respaldo
         private (string tema, string descripcion, List<string> palabras) GenerarTemaRespaldo()
         {
-            Console.WriteLine("🔄 Generando tema de respaldo...");
-
+            Console.WriteLine("Generando tema de respaldo...");
             var temas = new[]
             {
                 new
@@ -205,13 +198,9 @@ namespace ElAhorcadito.Services
                     palabras = new List<string> { "GUITARRA", "PIANO", "VIOLIN", "BATERIA", "TROMPETA", "SAXOFON", "FLAUTA", "ARPA", "CLARINETE", "TAMBOR" }
                 }
             };
-
             var random = new Random();
             var temaSeleccionado = temas[random.Next(temas.Length)];
-
             return (temaSeleccionado.tema, temaSeleccionado.descripcion, temaSeleccionado.palabras);
         }
-
-
     }
 }

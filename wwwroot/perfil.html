@@ -561,13 +561,11 @@
     </footer>
 
     <script>
-        // ✅ Verificar autenticación
         const token = localStorage.getItem('jwtToken');
         if (!token) {
             window.location.href = 'login.html';
         }
 
-        // ✅ Cargar datos del perfil
         async function cargarPerfil() {
             try {
                 const response = await fetch('/api/Auth/perfil', {
@@ -579,7 +577,6 @@
                     document.querySelector('.perfil-info h2').textContent = perfil.nombreUsuario;
                     document.querySelector('.perfil-info p').textContent = perfil.email;
 
-                    // ✅ Configurar switches
                     document.querySelectorAll('.switch input')[0].checked = perfil.sonidosActivados;
                     document.querySelectorAll('.switch input')[1].checked = perfil.recordatorioDiario;
                 } else if (response.status === 401) {
@@ -590,7 +587,6 @@
             }
         }
 
-        // ✅ Actualizar preferencias
         document.querySelectorAll('.switch input').forEach((switchEl, index) => {
             switchEl.addEventListener('change', async function () {
                 const sonidosActivados = document.querySelectorAll('.switch input')[0].checked;
@@ -616,7 +612,6 @@
             window.location.href = 'login.html';
         }
 
-        // Modales existentes
         document.addEventListener('DOMContentLoaded', function () {
             const reiniciarBtn = document.getElementById('reiniciar-progreso');
             const cerrarSesionBtn = document.getElementById('cerrar-sesion');
@@ -648,7 +643,6 @@
                 modalReiniciar.style.display = 'none';
             });
 
-            // ✅ Cerrar sesión confirmado
             confirmarCerrar.addEventListener('click', function () {
                 cerrarSesion();
             });
@@ -662,7 +656,6 @@
                 }
             });
 
-            // ✅ Cargar perfil al iniciar
             cargarPerfil();
         });
     </script>

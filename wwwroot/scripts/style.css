@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-* { /*hoja de estilos llamada "style.css"*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -68,7 +68,6 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-/**/
 .hearts-container{
     display: flex;
     justify-content: center;
@@ -125,7 +124,6 @@ body {
     margin-top: 40px;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: rgb(203, 197, 197); */
 }
 .keyboard button[disabled]{
     opacity: 0.6;
@@ -166,9 +164,6 @@ body {
     .keyboard button.incorrect {
         background-color: #E84C3D;
     }
-/*:where(.game-modal, .keyboard) button:hover {
-    background: #8286c9;
-}*/
 
 .game-modal {
     color: #000;

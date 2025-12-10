@@ -1,11 +1,9 @@
 // script "script.js"
-// ✅ Verificar autenticación
 const token = localStorage.getItem('jwtToken');
 if (!token) {
     window.location.href = 'login.html';
 }
 
-// ✅ Obtener tema seleccionado
 const temaSeleccionado = JSON.parse(sessionStorage.getItem('temaSeleccionado'));
 console.log(temaSeleccionado);
 if (!temaSeleccionado) {
@@ -25,7 +23,6 @@ const maxGuesses = 6;
 let palabrasCifradas = [];
 let palabraIndex = 0;
 
-// ✅ Función para descifrar Base64
 function descifrarPalabra(palabraCifrada) {
     try {
         return atob(palabraCifrada);
@@ -35,10 +32,8 @@ function descifrarPalabra(palabraCifrada) {
     }
 }
 
-// ✅ Cargar palabras del tema
 async function cargarPalabrasTema() {
     try {
-        // Las palabras cifradas ya vienen en temaSeleccionado.palabrasCifradas
         palabrasCifradas = temaSeleccionado.palabrasCifradas || [];
         palabraIndex = temaSeleccionado.palabrasCompletadas || 0;
 
@@ -48,7 +43,6 @@ async function cargarPalabrasTema() {
             return;
         }
 
-        // Descifrar la palabra actual
         currentWord = descifrarPalabra(palabrasCifradas[palabraIndex]);
         console.log(currentWord);
         resetGame();
@@ -76,14 +70,12 @@ const gameOver = async (isVictory) => {
         gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
         gameModal.classList.add("show");
 
-        // ✅ Actualizar progreso si ganó
         if (isVictory) {
             await actualizarProgreso('GANADA');
         }
     }, 300);
 }
 
-// ✅ Actualizar progreso en la API
 async function actualizarProgreso(resultado) {
     try {
         const response = await fetch('/api/Juego/actualizar-progreso', {
@@ -132,7 +124,6 @@ const initGame = (button, clickedLetter) => {
     if (correctLetters.length === currentWord.length) return gameOver(true);
 }
 
-// Crear teclado
 for (let i = 97; i <= 110; i++) {
     const char = String.fromCharCode(i);
     const button = document.createElement("button");
@@ -154,7 +145,6 @@ for (let i = 111; i <= 122; i++) {
     button.addEventListener("click", e => initGame(e.target, char));
 }
 
-// ✅ Play Again - Cargar siguiente palabra
 playAgainBtn.addEventListener("click", async function () {
     if (palabraIndex < palabrasCifradas.length) {
         currentWord = descifrarPalabra(palabrasCifradas[palabraIndex]);
@@ -165,5 +155,4 @@ playAgainBtn.addEventListener("click", async function () {
     }
 });
 
-// ✅ Inicializar juego
 cargarPalabrasTema();

@@ -204,8 +204,8 @@ footer a img{
 }
 .progress-bar {
   height: 100%;
-  background-color: #cfa32a; /* Color dorado (progreso) */
-  border-radius: 10px;       /* Bordes redondeados */
+  background-color: #cfa32a;
+  border-radius: 10px;       
 }
 .retoHoy samp {
     grid-column: span 2;
@@ -217,7 +217,7 @@ footer a img{
 .search-box {
   display: flex;
   align-items: center;
-  background-color:#008479; /* Color verde azulado */
+  background-color:#008479; 
   border-radius:40px;
   padding:10px;
   height:15px;
@@ -234,7 +234,7 @@ footer a img{
   color: white;
 }
 .search-icon img {
-  width:20px;   /* Ajusta el tamaño de la imagen */
+  width:20px;  
   height:20px;
   cursor: pointer;
   opacity: 0.5;

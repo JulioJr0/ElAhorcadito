@@ -422,13 +422,11 @@
     </div>
 
     <script>
-        // ✅ Verificar autenticación
         const token = localStorage.getItem('jwtToken');
         if (!token) {
             window.location.href = 'login.html';
         }
 
-        // Elementos del DOM
         const rachaActivaElement = document.getElementById("racha-activa");
         const mensajeRachaElement = document.getElementById("mensaje-racha");
         const semanaContainer = document.getElementById("semana-container");
@@ -440,7 +438,7 @@
 
         const diasSemana = ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"];
 
-        // ✅ Generar vista de días (solo lectura)
+        //Generar vista de días
         function generarDiasSemana(diasCompletados) {
             semanaContainer.innerHTML = '';
 
@@ -471,7 +469,7 @@
             }
         }
 
-        // ✅ Cargar estadísticas desde la API
+        //Cargar estadísticas desde la API
         async function cargarEstadisticas() {
             try {
                 const response = await fetch('/api/Racha/estadisticas', {
@@ -481,10 +479,10 @@
                 if (response.ok) {
                     const stats = await response.json();
 
-                    // Actualizar racha activa
+                    //Actualizar racha activa
                     rachaActivaElement.textContent = stats.diasConsecutivos;
 
-                    // Actualizar mensaje según racha
+                    //Actualizar mensaje según racha
                     if (stats.diasConsecutivos === 0) {
                         mensajeRachaElement.textContent = "¡Comienza tu racha hoy!";
                     } else if (stats.diasConsecutivos < 3) {
@@ -495,7 +493,7 @@
                         mensajeRachaElement.textContent = "¡Eres increíble, sigue así!";
                     }
 
-                    // Actualizar progreso semanal
+                    //Actualizar progreso semanal
                     const diasCompletados = [];
                     Object.keys(stats.progresoSemanal).forEach((diaKey, index) => {
                         if (stats.progresoSemanal[diaKey]) {
@@ -504,7 +502,6 @@
                     });
                     generarDiasSemana(diasCompletados);
 
-                    //ACTUALIZAR TEMAS COMPLETADOS CON TEMAS TOTALES REALES
                     temasCompletadosElement.textContent = `${stats.temasCompletados}/${stats.temasTotales}`;
                     const porcentaje = stats.temasTotales > 0
                         ? Math.round((stats.temasCompletados / stats.temasTotales) * 100)
@@ -512,7 +509,6 @@
                     porcentajeTemasElement.textContent = porcentaje + "%";
                     barraProgresoElement.style.width = porcentaje + "%";
 
-                    //ACTUALIZAR PALABRAS ADIVINADAS (YA INCLUYE TODAS)
                     palabrasAdivinadasElement.textContent = stats.palabrasTotales;
 
                 } else if (response.status === 401) {
@@ -525,12 +521,10 @@
             }
         }
 
-        // Botón regresar
         btnRegresar.addEventListener("click", function () {
             window.history.back();
         });
 
-        // ✅ Cargar datos al iniciar
         document.addEventListener('DOMContentLoaded', cargarEstadisticas);
     </script>
 </body>

@@ -310,22 +310,11 @@
                 padding: 20px 15px;
             }
         }
-
-        /*
-@media (min-height: 800px) {
-    body {
-        justify-content: flex-start;
-        padding-top: 50px;
-    }
-}
-*/
-
         @media (min-width: 1400px) {
             main {
                 max-width: 600px;
             }
         }
-
 
         @media (min-width: 1024px) {
             html, body {
@@ -480,7 +469,6 @@
             cambiarFormulario('registro');
         });
 
-        // ✅ LOGIN FETCH
         document.querySelector("#form-login .btn").addEventListener("click", async function (e) {
             e.preventDefault();
 
@@ -497,7 +485,7 @@
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email, password }),
-                    credentials: 'include' // ✅ IMPORTANTE para cookies
+                    credentials: 'include' //para cookies
                 });
 
                 if (response.ok) {
@@ -513,7 +501,7 @@
             }
         });
 
-        // ✅ REGISTRO FETCH
+        //REGISTRO FETCH
         document.querySelector("#form-registro .btn").addEventListener("click", async function (e) {
             e.preventDefault();
 

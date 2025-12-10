@@ -8,7 +8,6 @@
 
 </head>
 <body>
-    <!-- Modal de Game Over / Victoria -->
     <div class="game-modal">
         <div class="content">
             <img src="images/lost.gif" alt="fig">
@@ -19,7 +18,6 @@
     </div>
 
     <div class="container">
-        <!-- Encabezado del juego -->
         <div class="game-header">
             <button class="btn-regresar" onclick="window.history.back()">
                 ← Regresar
@@ -29,17 +27,13 @@
             </div>
         </div>
 
-        <!-- Caja del ahorcado -->
         <div class="hangman-box">
             <img src="images/hangman-0.svg" alt="hangman-img">
             <h1>EL AHORCADITO</h1>
         </div>
 
-        <!-- Caja del juego -->
         <div class="game-box">
-            <!-- Display de la palabra -->
             <ul class="word-display"></ul>
-            <!-- Corazones (vidas) -->
             <div class="hearts-container">
                 <span class="heart">❤️</span>
                 <span class="heart">❤️</span>
@@ -48,33 +42,21 @@
                 <span class="heart">❤️</span>
                 <span class="heart">❤️</span>
             </div>
-
-
-
-            <!-- Información del tema y progreso -->
             <div class="game-info">
                 <h4 class="tema-text">Tema: <b id="tema-nombre">Cargando...</b></h4>
                 <h4 class="progreso-text">Palabra <b id="palabra-actual">0</b> de <b id="total-palabras">10</b></h4>
             </div>
-
-            <!-- Intentos incorrectos -->
-            <!--<h4 class="guesses-text">
-        Incorrect guesses:
-        <b>0 / 6</b>
-    </h4>-->
             <!-- Teclado -->
             <div class="keyboard"></div>
         </div>
     </div>
 
     <script>
-        // ✅ Verificar autenticación
         const token = localStorage.getItem('jwtToken');
         if (!token) {
             window.location.href = 'login.html';
         }
 
-        // ✅ Obtener tema seleccionado
         const temaSeleccionado = JSON.parse(sessionStorage.getItem('temaSeleccionado'));
         const esRetoDiario = sessionStorage.getItem('esRetoDiario') === 'true';
 
@@ -83,10 +65,8 @@
             window.location.href = 'vistaTemas.html';
         }
 
-        // Elementos del DOM
         const hangmanImage = document.querySelector(".hangman-box img");
         const wordDisplay = document.querySelector(".word-display");
-        //const guessesText = document.querySelector(".guesses-text b");
         const keyboardDiv = document.querySelector(".keyboard");
         const gameModal = document.querySelector(".game-modal");
         const playAgainBtn = document.querySelector(".play-again");
@@ -96,14 +76,13 @@
         const palabraActualEl = document.getElementById("palabra-actual");
         const totalPalabrasEl = document.getElementById("total-palabras");
 
-        // Variables del juego
         let currentWord, correctLetters, wrongGuessCount;
         const maxGuesses = 6;
         let palabrasCifradas = [];
         let palabraIndex = 0;
         let palabrasDelTema = [];
 
-        // ✅ Función para descifrar Base64
+        //descifrar Base64
         function descifrarPalabra(palabraCifrada) {
             try {
                 return atob(palabraCifrada);
@@ -113,7 +92,7 @@
             }
         }
 
-        // ✅ Actualizar UI del tema
+        //Actualizar UI del tema
         function actualizarInfoTema() {
             temaNombre.textContent = temaSeleccionado.nombre;
             palabraActualEl.textContent = palabraIndex + 1;
@@ -124,7 +103,7 @@
             }
         }
 
-        // ✅ Actualizar corazones según intentos fallidos
+        //Actualizar corazones según intentos fallidos
         function actualizarCorazones() {
             const hearts = heartsContainer.querySelectorAll('.heart');
             hearts.forEach((heart, index) => {
@@ -138,12 +117,11 @@
             });
         }
 
-        // ✅ Resetear el juego
+        //Resetear el juego
         const resetGame = () => {
             correctLetters = [];
             wrongGuessCount = 0;
             hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
-            //guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
             keyboardDiv.querySelectorAll("button").forEach(btn => {
                 btn.disabled = false;
                 btn.classList.remove('correct', 'incorrect');
@@ -154,10 +132,10 @@
             actualizarInfoTema();
         }
 
-        // ✅ Cargar palabras del tema desde la API
+        //Cargar palabras del tema desde la API
         async function cargarPalabrasTema() {
             try {
-                // Si es reto diario, obtener datos desde el endpoint
+                //Si es reto diario, obtener datos desde el endpoint
                 if (esRetoDiario) {
                     const response = await fetch('/api/Juego/iniciar-diario', {
                         headers: { 'Authorization': `Bearer ${token}` }
@@ -172,11 +150,11 @@
                             return;
                         }
 
-                        // Usar la palabra del reto diario
+                        //Usar la palabra del reto diario
                         palabraIndex = retoDiario.palabraActualIndex;
                         currentWord = retoDiario.palabraAdivinar;
 
-                        // Actualizar info del tema
+                        //Actualizar info del tema
                         temaSeleccionado.palabrasCompletadas = retoDiario.palabrasCompletadas;
 
                     } else if (response.status === 401) {
@@ -195,7 +173,7 @@
                         return;
                     }
 
-                    // Descifrar todas las palabras
+                    //Descifrar todas las palabras
                     palabrasDelTema = palabrasCifradas.map(p => descifrarPalabra(p));
                     currentWord = palabrasDelTema[palabraIndex];
                 }
@@ -215,7 +193,7 @@
             }
         }
 
-        // ✅ Actualizar progreso en la API
+        //Actualizar progreso en la API
         async function actualizarProgreso(resultado) {
             try {
                 const response = await fetch('/api/Juego/actualizar-progreso', {
@@ -246,7 +224,7 @@
             }
         }
 
-        // ✅ Game Over
+        //Game Over
         const gameOver = async (isVictory) => {
             setTimeout(async () => {
                 const modalText = isVictory ? `¡Encontraste la palabra:` : `La palabra correcta era:`;
@@ -255,7 +233,7 @@
                 gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord.toUpperCase()}</b>`;
                 gameModal.classList.add("show");
 
-                // ✅ Actualizar progreso en la API
+                //Actualizar progreso en la API
                 if (isVictory) {
                     await actualizarProgreso('GANADA');
                 } else {
@@ -264,12 +242,12 @@
             }, 300);
         }
 
-        // ✅ Iniciar juego con letra clickeada
+        //Iniciar juego con letra clickeada
         const initGame = (button, clickedLetter) => {
-            // Revisar si la letra existe en la palabra
+            //Revisar si la letra existe en la palabra
             if (currentWord.toLowerCase().includes(clickedLetter)) {
                 button.classList.add('correct');
-                // Mostrar todas las letras correctas
+                //Mostrar todas las letras correctas
                 [...currentWord.toLowerCase()].forEach((letter, index) => {
                     if (letter === clickedLetter) {
                         correctLetters.push(letter);
@@ -278,7 +256,7 @@
                     }
                 });
             } else {
-                // Letra incorrecta: aumentar contador y actualizar imagen
+                //Letra incorrecta: aumentar contador y actualizar imagen
                 button.classList.add('incorrect');
                 wrongGuessCount++;
                 hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
@@ -286,14 +264,13 @@
             }
 
             button.disabled = true;
-            //guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
 
-            // Verificar condiciones de fin de juego
+            //Verificar condiciones de fin de juego
             if (wrongGuessCount === maxGuesses) return gameOver(false);
             if (correctLetters.length === currentWord.length) return gameOver(true);
         }
 
-        // ✅ Crear teclado (a-n, ñ, o-z)
+        //Crear teclado
         for (let i = 97; i <= 110; i++) {
             const char = String.fromCharCode(i);
             const button = document.createElement("button");
@@ -302,6 +279,7 @@
             button.addEventListener("click", e => initGame(e.target, char));
         }
 
+        //letra ñ
         const buttonNtilde = document.createElement("button");
         buttonNtilde.innerText = "Ñ";
         keyboardDiv.appendChild(buttonNtilde);
@@ -315,14 +293,14 @@
             button.addEventListener("click", e => initGame(e.target, char));
         }
 
-        // ✅ Botón "Siguiente Palabra"
+        //Botón "Siguiente Palabra"
         playAgainBtn.addEventListener("click", async function () {
-            // Verificar si hay más palabras
+            //Verificar si hay más palabras
             if (esRetoDiario) {
-                // En reto diario, cargar nueva palabra desde API
+                //En reto diario, cargar nueva palabra desde API
                 await cargarPalabrasTema();
             } else {
-                // En temas normales, avanzar a siguiente palabra
+                //En temas normales, avanzar a siguiente palabra
                 if (palabraIndex < palabrasDelTema.length) {
                     currentWord = palabrasDelTema[palabraIndex];
                     resetGame();
@@ -333,7 +311,7 @@
             }
         });
 
-        // ✅ Inicializar juego al cargar
+        //Inicializar juego al cargar
         document.addEventListener('DOMContentLoaded', function () {
             cargarPalabrasTema();
         });

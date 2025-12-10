@@ -125,13 +125,7 @@ namespace ElAhorcadito.Services
                 var completoRetoDiario = progresosCompletados.Any(p => p.FechaUltimaActividad.Date == fecha);
                 resultado[diasSemana[i]] = completoRetoDiario;
             }
-
             return resultado;
         }
-
-
-
-
-
     }
 }
