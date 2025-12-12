@@ -15,18 +15,27 @@ namespace ElAhorcadito.Services
         public IMapper Mapper { get; }
         public JwtHelper JwtHelper { get; }
         public ITemaService TemaService { get; }
+        public IRepository<ProgresoTemas> ProgresoRepository { get; }
+        public IRepository<Rachas> RachasRepository { get; }
+        public IRepository<Notificaciones> NotificacionesRepository { get; }
 
         public AuthService(IRepository<Usuarios> repository,
             IRepository<RefreshTokens> refreshTokensRepository,
             IMapper mapper,
             JwtHelper jwtHelper,
-            ITemaService temaService)
+            ITemaService temaService,
+            IRepository<ProgresoTemas> progresoRepository,
+            IRepository<Rachas> rachasRepository,
+            IRepository<Notificaciones> notificacionesRepository)
         {
             Repository = repository;
             RefreshTokensRepository = refreshTokensRepository;
             Mapper = mapper;
             JwtHelper = jwtHelper;
             TemaService = temaService;
+            ProgresoRepository = progresoRepository;
+            RachasRepository = rachasRepository;
+            NotificacionesRepository = notificacionesRepository;
         }
 
         public void RegistrarUsuario(IRegistroDTO dto)
@@ -136,5 +145,49 @@ namespace ElAhorcadito.Services
                 Repository.Update(usuario);
             }
         }
+
+        public void ReiniciarProgreso(int idUsuario)
+        {
+            // Obtener el usuario
+            var usuario = Repository.Get(idUsuario);
+            if (usuario == null)
+                throw new Exception("Usuario no encontrado");
+
+            // 1. Eliminar todo el progreso de temas
+            var progresos = ProgresoRepository.GetAll()
+                .Where(p => p.IdUsuario == idUsuario)
+                .ToList();
+
+            foreach (var progreso in progresos)
+            {
+                ProgresoRepository.Delete(progreso.Id);
+            }
+
+            // 2. Eliminar/Reiniciar rachas
+            var racha = RachasRepository.GetAll()
+                .FirstOrDefault(r => r.IdUsuario == idUsuario);
+
+            if (racha != null)
+            {
+                RachasRepository.Delete(racha.Id);
+            }
+
+            // 3. Eliminar notificaciones
+            var notificaciones = NotificacionesRepository.GetAll()
+                .Where(n => n.IdUsuario == idUsuario)
+                .ToList();
+
+            foreach (var notif in notificaciones)
+            {
+                NotificacionesRepository.Delete(notif.Id);
+            }
+
+            // 4. Restablecer preferencias a valores por defecto
+            usuario.SonidosActivados = true;
+            usuario.RecordatorioDiario = true;
+            Repository.Update(usuario);
+        }
+
+
     }
 }

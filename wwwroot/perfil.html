@@ -579,6 +579,8 @@
 
                     document.querySelectorAll('.switch input')[0].checked = perfil.sonidosActivados;
                     document.querySelectorAll('.switch input')[1].checked = perfil.recordatorioDiario;
+
+                    actualizarEstadoSonidos(perfil.sonidosActivados);
                 } else if (response.status === 401) {
                     cerrarSesion();
                 }
@@ -586,11 +588,21 @@
                 console.error('Error cargando perfil:', error);
             }
         }
+        function actualizarEstadoSonidos(activado) {
+            const statusText = document.querySelector('.opcion .texto .status');
+            if (statusText) {
+                statusText.textContent = activado ? 'Activado' : 'Desactivado';
+            }
+        }
 
         document.querySelectorAll('.switch input').forEach((switchEl, index) => {
             switchEl.addEventListener('change', async function () {
                 const sonidosActivados = document.querySelectorAll('.switch input')[0].checked;
                 const recordatorioDiario = document.querySelectorAll('.switch input')[1].checked;
+
+                if (index === 0) {
+                    actualizarEstadoSonidos(sonidosActivados);
+                }
 
                 try {
                     await fetch('/api/Auth/preferencias', {
@@ -610,6 +622,27 @@
         function cerrarSesion() {
             localStorage.removeItem('jwtToken');
             window.location.href = 'login.html';
+        }
+
+        async function reiniciarProgreso() {
+            try {
+                const response = await fetch('/api/Auth/reiniciar-progreso', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                if (response.ok) {
+                    alert('Progreso reiniciado correctamente');
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Error al reiniciar el progreso');
+                }
+            } catch (error) {
+                console.error('Error reiniciando progreso:', error);
+                alert('Error de conexión al reiniciar');
+            }
         }
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -641,6 +674,7 @@
             confirmarReiniciar.addEventListener('click', function () {
                 alert('Progreso reiniciado correctamente');
                 modalReiniciar.style.display = 'none';
+                reiniciarProgreso();
             });
 
             confirmarCerrar.addEventListener('click', function () {

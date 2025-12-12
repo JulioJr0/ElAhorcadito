@@ -117,5 +117,23 @@ namespace ElAhorcadito.Controllers.api
             Service.ActualizarPreferencias(idUsuario, dto);
             return Ok();
         }
+
+        [Authorize]
+        [HttpPost("reiniciar-progreso")]
+        public IActionResult ReiniciarProgreso()
+        {
+            if (!int.TryParse(User.FindFirst("Id")?.Value, out int idUsuario))
+                return Unauthorized();
+
+            try
+            {
+                Service.ReiniciarProgreso(idUsuario);
+                return Ok(new { mensaje = "Progreso reiniciado correctamente" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensaje = ex.Message });
+            }
+        }
     }
 }

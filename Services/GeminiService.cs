@@ -19,35 +19,15 @@ namespace ElAhorcadito.Services
         {
             var apiKey = Configuration["GeminiSettings:ApiKey"];
             var apiUrl = $"{Configuration["GeminiSettings:ApiUrl"]}?key={apiKey}";
-            var prompt = @"Genera un tema ÚNICO, CREATIVO y POCO COMÚN para un juego de ahorcado. 
             
-            REQUISITOS IMPORTANTES:
-            - Elige de categorías VARIADAS: mitología, ciencia, historia, arte, gastronomía, tecnología, literatura, naturaleza, películas, arquitectura, medicina, psicología, economía, geografía inusual, profesiones raras, eventos históricos, especies animales exóticas, plantas, fenómenos naturales, deportes extremos, instrumentos antiguos, culturas ancestrales, bebidas del mundo, vestimentas tradicionales, festivales culturales, etc.
-            - Evita temas muy comunes (animales básicos, deportes populares, países famosos, programación)
-            - Sé creativo y específico: en lugar de ""Animales"", usa ""Depredadores marinos abisales""
-            - La descripción debe ser atractiva y dar pistas sutiles sobre el tema
-            - Las 10 palabras deben estar relacionadas DIRECTAMENTE con el tema específico
-
+            var prompt = @"Genera un tema aleatorio interesante para un juego de ahorcado, una descripción breve del tema (máximo 80 caracteres) y 10 palabras relacionadas. 
+            Las palabras deben tener entre 5 y 12 letras, ser en español y estar en mayúsculas. 
             Responde ÚNICAMENTE en formato JSON válido sin markdown, con esta estructura exacta:
             {
-              ""tema"": ""Nombre específico del tema"",
-              ""descripcion"": ""Descripción corta y atractiva (máximo 80 caracteres)"",
+              ""tema"": ""Nombre del tema"",
+              ""descripcion"": ""Descripción corta del tema"",
               ""palabras"": [""PALABRA1"", ""PALABRA2"", ""PALABRA3"", ""PALABRA4"", ""PALABRA5"", ""PALABRA6"", ""PALABRA7"", ""PALABRA8"", ""PALABRA9"", ""PALABRA10""]
-            }
-            
-            Notas finales:
-            - Las palabras deben tener entre 3 y 12 letras
-            - Todas en español y mayúsculas
-            - Cada palabra debe ser un sustantivo o adjetivo directamente relacionado con el tema
-            - Nunca uses palabras genéricas o muy obvias";
-            //var prompt = @"Genera un tema aleatorio interesante para un juego de ahorcado, una descripción breve del tema (máximo 80 caracteres) y 10 palabras relacionadas. 
-            //Las palabras deben tener entre 5 y 12 letras, ser en español y estar en mayúsculas. 
-            //Responde ÚNICAMENTE en formato JSON válido sin markdown, con esta estructura exacta:
-            //{
-            //  ""tema"": ""Nombre del tema"",
-            //  ""descripcion"": ""Descripción corta del tema"",
-            //  ""palabras"": [""PALABRA1"", ""PALABRA2"", ""PALABRA3"", ""PALABRA4"", ""PALABRA5"", ""PALABRA6"", ""PALABRA7"", ""PALABRA8"", ""PALABRA9"", ""PALABRA10""]
-            //}";
+            }";
 
             var requestBody = new
             {
@@ -63,9 +43,9 @@ namespace ElAhorcadito.Services
                 },
                 generationConfig = new
                 {
-                    temperature = 0.95,
-                    topK = 40,
-                    topP = 0.9,
+                    temperature = 0.9,
+                    topK = 1,
+                    topP = 1,
                     maxOutputTokens = 2048,
                 }
             };
@@ -81,7 +61,7 @@ namespace ElAhorcadito.Services
                 var responseBody = await response.Content.ReadAsStringAsync();
 
                 //probando api de gemini
-                Console.WriteLine("=== RESPUESTA DE GEMINI ===");
+                Console.WriteLine("================== RESPUESTA DE GEMINI =====================");
                 Console.WriteLine(responseBody);
                 Console.WriteLine("===========================");
 
@@ -146,16 +126,19 @@ namespace ElAhorcadito.Services
             }
             catch (HttpRequestException ex)
             {
+                Console.WriteLine("===========================ERROR==============================");
                 Console.WriteLine($"Error de conexión con Gemini: {ex.Message}");
                 return GenerarTemaRespaldo();
             }
             catch (JsonException ex)
             {
+                Console.WriteLine("===========================ERROR==============================");
                 Console.WriteLine($"Error parseando JSON de Gemini: {ex.Message}");
                 return GenerarTemaRespaldo();
             }
             catch (Exception ex)
             {
+                Console.WriteLine("===========================ERROR==============================");
                 Console.WriteLine($"Error inesperado en Gemini: {ex.Message}");
                 return GenerarTemaRespaldo();
             }
@@ -169,31 +152,31 @@ namespace ElAhorcadito.Services
             {
                 new
                 {
-                    tema = "Programación",
+                    tema = "Programación 1",
                     descripcion = "Conceptos fundamentales de desarrollo de software",
                     palabras = new List<string> { "JAVASCRIPT", "PYTHON", "DATABASE", "SERVIDOR", "FRONTEND", "BACKEND", "ALGORITMO", "VARIABLE", "FUNCION", "SINTAXIS" }
                 },
                 new
                 {
-                    tema = "Animales Salvajes",
+                    tema = "Animales Salvajes 1",
                     descripcion = "Criaturas fascinantes del reino animal",
                     palabras = new List<string> { "ELEFANTE", "JIRAFA", "LEOPARDO", "COCODRILO", "HIPOPOTAMO", "RINOCERONTE", "CEBRA", "GACELA", "BUFALO", "GUEPARDO" }
                 },
                 new
                 {
-                    tema = "Países del Mundo",
+                    tema = "Países del Mundo 1",
                     descripcion = "Naciones de diferentes continentes",
                     palabras = new List<string> { "ARGENTINA", "COLOMBIA", "ALEMANIA", "AUSTRALIA", "JAPON", "CANADA", "BRASIL", "ITALIA", "EGIPTO", "GRECIA" }
                 },
                 new
                 {
-                    tema = "Deportes",
+                    tema = "Deportes 1",
                     descripcion = "Actividades físicas y competitivas",
                     palabras = new List<string> { "FUTBOL", "BASQUETBOL", "NATACION", "ATLETISMO", "CICLISMO", "VOLEIBOL", "TENIS", "BEISBOL", "BOXEO", "ESCALADA" }
                 },
                 new
                 {
-                    tema = "Instrumentos Musicales",
+                    tema = "Instrumentos Musicales 1",
                     descripcion = "Objetos para crear música",
                     palabras = new List<string> { "GUITARRA", "PIANO", "VIOLIN", "BATERIA", "TROMPETA", "SAXOFON", "FLAUTA", "ARPA", "CLARINETE", "TAMBOR" }
                 }

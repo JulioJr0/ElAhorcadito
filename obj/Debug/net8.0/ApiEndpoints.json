@@ -59,6 +59,16 @@
   },
   {
     "ContainingType": "ElAhorcadito.Controllers.api.AuthController",
+    "Method": "ReiniciarProgreso",
+    "RelativePath": "api/Auth/reiniciar-progreso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.AuthController",
     "Method": "Renew",
     "RelativePath": "api/Auth/renew",
     "HttpMethod": "GET",

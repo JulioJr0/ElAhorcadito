@@ -15,9 +15,9 @@
             <img src="images/flama.png" />
             <div class="temma">
                 <h4>Cargando...</h4>
-                <p><i>Cargando...</i>  <i></i> </p>
+                <p><i>0</i> de <i>10</i> palabras completas</p>
             </div>
-            <q> </q>
+            <q>Cargando...</q>
             <div class="progress-container">
                 <div class="progress-bar" style="width: 60%;"></div>
             </div>
@@ -216,6 +216,27 @@
         document.querySelector('footer a').addEventListener('click', function (e) {
             window.location.href = "index.html"
     });
+
+        document.addEventListener('visibilitychange', function () {
+            if (!document.hidden) {
+                // La página se volvió visible (el usuario regresó)
+                console.log('Página visible, recargando temas...');
+                cargarTemas();
+            }
+        });
+
+        window.addEventListener('pageshow', function (event) {
+            // Si viene del caché (botón atrás), recargar
+            if (event.persisted) {
+                console.log('Regresó con botón atrás, recargando temas...');
+                cargarTemas();
+            }
+        });
+
+        window.addEventListener('focus', function () {
+            console.log('Ventana recuperó foco, recargando temas...');
+            cargarTemas();
+        });
 
     // Cargar temas al iniciar
     document.addEventListener('DOMContentLoaded', cargarTemas);

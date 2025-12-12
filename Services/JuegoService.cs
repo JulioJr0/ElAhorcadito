@@ -102,7 +102,17 @@ namespace ElAhorcadito.Services
             var progreso = ProgresoRepository.GetAll()
                 .FirstOrDefault(x => x.IdUsuario == idUsuario && x.IdTema == dto.IdTema);
 
-            if (progreso == null) return;
+            if (progreso == null)
+            {
+                progreso = new ProgresoTemas
+                {
+                    IdUsuario = idUsuario,
+                    IdTema = dto.IdTema,
+                    PalabrasCompletadas = 0,
+                    FechaUltimaActividad = DateTime.UtcNow
+                };
+                ProgresoRepository.Insert(progreso);
+            }
 
             if (dto.Resultado == "GANADA")
             {

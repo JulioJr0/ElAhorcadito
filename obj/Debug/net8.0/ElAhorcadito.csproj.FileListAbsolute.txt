@@ -7,7 +7,11 @@ D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\E
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\ElAhorcadito.runtimeconfig.json
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\ElAhorcadito.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\ElAhorcadito.pdb
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\AutoMapper.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\FluentValidation.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Humanizer.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.Build.Locator.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -30,6 +34,12 @@ D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\M
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Mono.TextTemplating.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\MySqlConnector.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
@@ -40,6 +50,7 @@ D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\S
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\System.Composition.Runtime.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\System.Composition.TypedParts.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\System.IO.Pipelines.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\System.Text.Json.dll
@@ -116,6 +127,7 @@ D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\E
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\ElAhorcadito.AssemblyInfo.cs
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\ElAhorcadito.csproj.CoreCompileInputs.cache
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\ElAhorcadito.MvcApplicationPartsAssemblyInfo.cache
+D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\ElAhorcadito.sourcelink.json
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -131,15 +143,3 @@ D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\r
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\ElAhorcadito.pdb
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\ElAhorcadito.genruntimeconfig.cache
 D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\ref\ElAhorcadito.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\AutoMapper.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\FluentValidation.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\JULIOREYES\Universidad\11.SEMESTRE-11\Hangman\ElAhorcadito\obj\Debug\net8.0\ElAhorcadito.sourcelink.json

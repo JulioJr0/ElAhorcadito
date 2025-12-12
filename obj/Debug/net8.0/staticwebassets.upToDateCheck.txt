@@ -3,6 +3,7 @@ wwwroot\images\control.png
 wwwroot\images\Designer (2).png
 wwwroot\images\flama.png
 wwwroot\images\Flecha.png
+wwwroot\images\gaming-game-minecraft-background-music-372242.mp3
 wwwroot\images\hangman-0.svg
 wwwroot\images\hangman-1.svg
 wwwroot\images\hangman-2.svg
@@ -24,11 +25,8 @@ wwwroot\index.html
 wwwroot\login.html
 wwwroot\perfil.html
 wwwroot\racha.html
-wwwroot\scripts\script.js
 wwwroot\scripts\style.css
 wwwroot\scripts\style_temaIndex.css
 wwwroot\scripts\style_vistaTemas.css
-wwwroot\scripts\word-list.js
 wwwroot\vistaTemas.html
-wwwroot\wwwroot.rar
 wwwroot\juego.html

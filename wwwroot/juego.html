@@ -8,6 +8,10 @@
 
 </head>
 <body>
+    <audio id="background-music" loop>
+        <source src="images/gaming-game-minecraft-background-music-372242.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="game-modal">
         <div class="content">
             <img src="images/lost.gif" alt="fig">
@@ -19,7 +23,7 @@
 
     <div class="container">
         <div class="game-header">
-            <button class="btn-regresar" onclick="window.history.back()">
+            <button class="btn-regresar">
                 ← Regresar
             </button>
             <div class="reto-badge" id="reto-badge" style="display:none;">
@@ -76,12 +80,48 @@
         const palabraActualEl = document.getElementById("palabra-actual");
         const totalPalabrasEl = document.getElementById("total-palabras");
 
+        const backgroundMusic = document.getElementById('background-music');
+        let sonidosActivados = false;
+
         let currentWord, correctLetters, wrongGuessCount;
         const maxGuesses = 6;
         let palabrasCifradas = [];
         let palabraIndex = 0;
         let palabrasDelTema = [];
 
+        async function cargarPreferencias() {
+            try {
+                const response = await fetch('/api/Auth/perfil', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+
+                if (response.ok) {
+                    const perfil = await response.json();
+                    sonidosActivados = perfil.sonidosActivados;
+
+                    // Reproducir música de fondo si está activada
+                    if (sonidosActivados) {
+                        backgroundMusic.volume = 0.3; // Volumen al 30%
+                        backgroundMusic.play().catch(err => {
+                            console.log('No se pudo reproducir automáticamente:', err);
+                        });
+                    }
+                } else if (response.status === 401) {
+                    localStorage.removeItem('jwtToken');
+                    window.location.href = 'login.html';
+                }
+            } catch (error) {
+                console.error('Error cargando preferencias:', error);
+            }
+        }
+
+        document.querySelector(".btn-regresar").addEventListener("click", function (e) {
+            if (backgroundMusic) {
+                backgroundMusic.pause();
+                backgroundMusic.currentTime = 0;
+            }
+            window.location.href = 'vistaTemas.html';
+        });
         //descifrar Base64
         function descifrarPalabra(palabraCifrada) {
             try {
@@ -306,6 +346,14 @@
                     resetGame();
                 } else {
                     alert('¡Completaste todas las palabras de este tema!');
+                    sessionStorage.removeItem('temaSeleccionado');
+                    sessionStorage.removeItem('esRetoDiario');
+
+                    if (backgroundMusic) {
+                        backgroundMusic.pause();
+                        backgroundMusic.currentTime = 0;
+                    }
+
                     window.location.href = 'vistaTemas.html';
                 }
             }
@@ -313,7 +361,14 @@
 
         //Inicializar juego al cargar
         document.addEventListener('DOMContentLoaded', function () {
+            cargarPreferencias();
             cargarPalabrasTema();
+        });
+
+        window.addEventListener('beforeunload', function () {
+            if (backgroundMusic) {
+                backgroundMusic.pause();
+            }
         });
     </script>
 </body>

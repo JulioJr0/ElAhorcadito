@@ -33,7 +33,7 @@ namespace ElAhorcadito.Services
 
                 if (ultimoTema == null)
                 {
-                    //Si no hay ningún tema, crear desde hace 7 días
+                    //Si no hay ningún tema, crear desde hece 1 día
                     fechaDesde = DateTime.Today.AddDays(-1);
                 }
                 else if (fechaInicio.HasValue)

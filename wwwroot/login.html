@@ -460,7 +460,15 @@
                 formRegistro.classList.add("activo");
             }
         }
-
+        function togglePasswordVisibility(passwordInput, icon) {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.textContent = '👁️';
+            } else {
+                passwordInput.type = 'password';
+                icon.textContent = '🔒';
+            }
+        }
         opcionLogin.addEventListener("click", function () {
             cambiarFormulario('login');
         });
@@ -553,7 +561,34 @@
                 }
             });
         }
+        const loginPasswordInput = document.getElementById("password");
+        const loginPasswordIcon = document.querySelector("#form-login .input-icon");
+        if (loginPasswordIcon) {
+            loginPasswordIcon.addEventListener("click", function () {
+                togglePasswordVisibility(loginPasswordInput, loginPasswordIcon);
+            });
+            loginPasswordIcon.style.cursor = 'pointer';
+        }
 
+        // Toggle para registro - primera contraseña
+        const registroPasswordInput = document.getElementById("password-registro");
+        const registroPasswordIcon = document.querySelectorAll("#form-registro .input-icon")[0];
+        if (registroPasswordIcon) {
+            registroPasswordIcon.addEventListener("click", function () {
+                togglePasswordVisibility(registroPasswordInput, registroPasswordIcon);
+            });
+            registroPasswordIcon.style.cursor = 'pointer';
+        }
+
+        // Toggle para registro - confirmar contraseña
+        const confirmarPasswordInput = document.getElementById("confirmar-password");
+        const confirmarPasswordIcon = document.querySelectorAll("#form-registro .input-icon")[1];
+        if (confirmarPasswordIcon) {
+            confirmarPasswordIcon.addEventListener("click", function () {
+                togglePasswordVisibility(confirmarPasswordInput, confirmarPasswordIcon);
+            });
+            confirmarPasswordIcon.style.cursor = 'pointer';
+        }
         window.addEventListener('load', verificarTextoVisible);
         window.addEventListener('resize', verificarTextoVisible);
     </script>
