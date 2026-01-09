@@ -23,6 +23,8 @@ public partial class Usuarios
 
     public virtual ICollection<ProgresoTemas> ProgresoTemas { get; set; } = new List<ProgresoTemas>();
 
+    public virtual ICollection<PushSubscriptions> PushSubscriptions { get; set; } = new List<PushSubscriptions>();
+
     public virtual Rachas? Rachas { get; set; }
 
     public virtual ICollection<RefreshTokens> RefreshTokens { get; set; } = new List<RefreshTokens>();

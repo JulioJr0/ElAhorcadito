@@ -217,5 +217,42 @@ namespace ElAhorcadito.Services
             }
             return resultado;
         }
+
+        // ✅ AGREGAR ESTE MÉTODO A TemaService.cs
+
+        public object? ObtenerTemaPorId(int idTema, int idUsuario)
+        {
+            var tema = TemasRepository.GetAll()
+                .FirstOrDefault(x => x.Id == idTema);
+
+            if (tema == null)
+                return null;
+
+            var progreso = ProgresoRepository.GetAll()
+                .FirstOrDefault(x => x.IdUsuario == idUsuario && x.IdTema == tema.Id);
+
+            var palabras = PalabrasRepository.GetAll()
+                .Where(x => x.IdTema == tema.Id)
+                .OrderBy(x => x.Id)
+                .Select(x => x.Palabra)
+                .ToList();
+
+            // Cifrar las palabras (Base64 simple)
+            var palabrasCifradas = palabras.Select(p =>
+                Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(p))
+            ).ToList();
+
+            return new
+            {
+                IdTema = tema.Id,
+                Nombre = tema.Nombre,
+                Descripcion = tema.Descripcion ?? "",
+                FechaGeneracion = tema.FechaGeneracion,
+                PalabrasCompletadas = progreso?.PalabrasCompletadas ?? 0,
+                TotalPalabras = 10,
+                PorcentajeProgreso = ((progreso?.PalabrasCompletadas ?? 0) / 10.0) * 100,
+                PalabrasCifradas = palabrasCifradas
+            };
+        }
     }
 }

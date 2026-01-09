@@ -48,6 +48,7 @@ builder.Services.AddTransient<IJuegoService, JuegoService>();
 builder.Services.AddTransient<ITemaService, TemaService>();
 builder.Services.AddTransient<IRachaService, RachaService>();
 builder.Services.AddTransient<IGeminiService, GeminiService>();
+builder.Services.AddTransient<IPushNotificationService, PushNotificationService>();
 
 // AGREGAR: Background Task Queue
 builder.Services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>();
@@ -73,11 +74,24 @@ var app = builder.Build();
 var options = new DefaultFilesOptions();
 options.DefaultFileNames.Clear();
 options.DefaultFileNames.Add("login.html");
-options.DefaultFileNames.Add("index.html");
+//options.DefaultFileNames.Add("index.html");
+app.Use(async (context, next) =>
+{
+    // No cachear el service worker
+    if (context.Request.Path.StartsWithSegments("/sw.js"))
+    {
+        context.Response.Headers.Append("Cache-Control", "no-cache, no-store, must-revalidate");
+        context.Response.Headers.Append("Pragma", "no-cache");
+        context.Response.Headers.Append("Expires", "0");
+    }
+    await next();
+});
 app.UseDefaultFiles(options);
+app.UseStaticFiles();
 
 app.UseFileServer();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
+//actual

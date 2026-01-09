@@ -1,186 +1,290 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\",
+  "WorkspaceRootPath": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\sw.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\sw.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\juego.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\juego.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\juegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\juegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\temaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\temaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\ahorcaditocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\ahorcaditocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\controllers\\api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\rachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\rachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\perfil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\perfil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\temas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\temas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\rachas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\rachas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\progresotemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\progresotemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\palabras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\palabras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\entities\\notificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\notificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\ijuegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\ijuegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\controllers\\api\\temascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\temascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\controllers\\api\\rachacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\rachacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\controllers\\api\\juegocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\juegocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\scripts\\style_temaindex.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\scripts\\style_temaindex.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\vistatemas.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\vistatemas.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\racha.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\racha.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\itemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\itemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\estadisticas\\estadisticasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\estadisticas\\estadisticasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\juego.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\juego.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\scripts\\style_vistatemas.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\scripts\\style_vistatemas.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\wwwroot\\scripts\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\scripts\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\notificaciones.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\notificaciones.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\estadisticas\\iestadisticasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\estadisticas\\iestadisticasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\perfil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\perfil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\partidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\partidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\racha.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\racha.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\progresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\progresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\vistatemas.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\vistatemas.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\juego\\retodiariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\temaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\temaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\rachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\rachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\retodiariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\retodiariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\temas\\itemalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\temas\\itemalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\controllers\\api\\temascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\temascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\dtos\\temas\\temalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\controllers\\api\\rachacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\rachacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\temas\\temalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\temas\\temalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\models\\validators\\registrodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\validators\\registrodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\controllers\\api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\scripts\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\scripts\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\backgroundtaskqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\backgroundtaskqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\itemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\itemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\irachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\controllers\\api\\notificacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\notificacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\controllers\\api\\juegocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:controllers\\api\\juegocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\scripts\\style_temaindex.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\scripts\\style_temaindex.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\helpers\\encriptacionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:helpers\\encriptacionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\juegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\juegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\pushnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\pushnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\ijuegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\ijuegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\irachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\irachaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\elahorcadito\\services\\queuedhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\pushsubscriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\pushsubscriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\push\\subscriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\push\\subscriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\push\\notificacionpushdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\push\\notificacionpushdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\ahorcaditocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\ahorcaditocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\ipushnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\ipushnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\actualizarprogresodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\actualizarprogresodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\backgroundtaskqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\backgroundtaskqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\temas\\itemalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\temas\\itemalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\notificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\notificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\queuedhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\queuedhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\validators\\registrodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\validators\\registrodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\progresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\progresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\partidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\partidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\palabraactualdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\palabraactualdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\iretodiariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\iretodiariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\iprogresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\iprogresoofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\ipartidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\ipartidaofflinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\ipalabraactualdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\ipalabraactualdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\juego\\iactualizarprogresodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\juego\\iactualizarprogresodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\estadisticas\\iestadisticasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\estadisticas\\iestadisticasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\estadisticas\\estadisticasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\estadisticas\\estadisticasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\auth\\registrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\registrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\auth\\preferenciasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\preferenciasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\auth\\perfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\perfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\auth\\iregistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\iregistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\auth\\ipreferenciasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\ipreferenciasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\auth\\iperfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\iperfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\dtos\\auth\\ilogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\dtos\\auth\\ilogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\refreshtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\rachas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\rachas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\progresotemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\progresotemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\palabras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\palabras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\models\\entities\\temas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:models\\entities\\temas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\wwwroot\\scripts\\style_vistatemas.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:wwwroot\\scripts\\style_vistatemas.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|d:\\julioreyes\\universidad\\11.semestre-11\\hangman\\indexddb funciona perfecto falta racha mostrar correctas 8ene\\v5\\elahorcadito\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1105FC64-73C2-49E9-B41C-81192C1697A8}|ElAhorcadito.csproj|solutionrelative:repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -198,264 +302,192 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IAuthService.cs",
-              "RelativeToolTip": "Services\\IAuthService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwAsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:19:59.461Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAEwLwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:22:30.619Z"
+              "Title": "vistaTemas.html",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\vistaTemas.html",
+              "RelativeDocumentMoniker": "wwwroot\\vistaTemas.html",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\vistaTemas.html",
+              "RelativeToolTip": "wwwroot\\vistaTemas.html",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAiwP4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-09T02:55:41.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Repository.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Repositories\\Repository.cs",
-              "RelativeToolTip": "Repositories\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:05.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\api\\AuthController.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\api\\AuthController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAEwIgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T03:04:35.684Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "perfil.html",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\perfil.html",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\perfil.html",
               "RelativeDocumentMoniker": "wwwroot\\perfil.html",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\perfil.html",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\perfil.html",
               "RelativeToolTip": "wwwroot\\perfil.html",
-              "ViewState": "AgIAAJECAAAAAAAAAAAuwK4CAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAIUDAAAAAAAAAAAiwJkDAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-12-10T16:45:34.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Palabras.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Palabras.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Palabras.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Palabras.cs",
-              "RelativeToolTip": "Models\\Entities\\Palabras.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:25.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "JuegoService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\JuegoService.cs",
-              "RelativeDocumentMoniker": "Services\\JuegoService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\JuegoService.cs",
-              "RelativeToolTip": "Services\\JuegoService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAAKgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:19:26.644Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RachaService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\RachaService.cs",
-              "RelativeDocumentMoniker": "Services\\RachaService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\RachaService.cs",
-              "RelativeToolTip": "Services\\RachaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T16:58:11.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAEwCEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T03:09:21.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "juego.html",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\juego.html",
-              "RelativeDocumentMoniker": "wwwroot\\juego.html",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\juego.html",
-              "RelativeToolTip": "wwwroot\\juego.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "notificaciones.html",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\notificaciones.html",
+              "RelativeDocumentMoniker": "wwwroot\\notificaciones.html",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\notificaciones.html",
+              "RelativeToolTip": "wwwroot\\notificaciones.html",
+              "ViewState": "AgIAAHkCAAAAAAAAAAAiwI0CAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-09T02:01:17.644Z"
+              "WhenOpened": "2026-01-04T00:08:26.189Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GeminiService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\GeminiService.cs",
-              "RelativeDocumentMoniker": "Services\\GeminiService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\GeminiService.cs",
-              "RelativeToolTip": "Services\\GeminiService.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAAAK4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T02:59:26.213Z",
-              "EditorCaption": ""
+              "DocumentIndex": 12,
+              "Title": "manifest.json",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\manifest.json",
+              "RelativeDocumentMoniker": "wwwroot\\manifest.json",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\manifest.json",
+              "RelativeToolTip": "wwwroot\\manifest.json",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-03T20:07:49.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "login.html",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\login.html",
+              "RelativeDocumentMoniker": "wwwroot\\login.html",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\login.html",
+              "RelativeToolTip": "wwwroot\\login.html",
+              "ViewState": "AgIAAAYCAAAAAAAAAAAiwB4CAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-10T19:28:27.875Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "juego.html",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\juego.html",
+              "RelativeDocumentMoniker": "wwwroot\\juego.html",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\juego.html",
+              "RelativeToolTip": "wwwroot\\juego.html",
+              "ViewState": "AgIAAI8BAAAAAAAAAAAiwK4BAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-08T18:40:06.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAAACACAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-09T02:16:54.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "TemaService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\TemaService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\TemaService.cs",
               "RelativeDocumentMoniker": "Services\\TemaService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\TemaService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\TemaService.cs",
               "RelativeToolTip": "Services\\TemaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAQwJ8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T03:03:28.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AhorcaditoContext.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\AhorcaditoContext.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\AhorcaditoContext.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\AhorcaditoContext.cs",
-              "RelativeToolTip": "Models\\Entities\\AhorcaditoContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:26.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Usuarios.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Usuarios.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Usuarios.cs",
-              "RelativeToolTip": "Models\\Entities\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:20.392Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Temas.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Temas.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Temas.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Temas.cs",
-              "RelativeToolTip": "Models\\Entities\\Temas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:22.005Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "RefreshTokens.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\RefreshTokens.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\RefreshTokens.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\RefreshTokens.cs",
-              "RelativeToolTip": "Models\\Entities\\RefreshTokens.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:22.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Rachas.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Rachas.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Rachas.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Rachas.cs",
-              "RelativeToolTip": "Models\\Entities\\Rachas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:23.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProgresoTemas.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\ProgresoTemas.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\ProgresoTemas.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\ProgresoTemas.cs",
-              "RelativeToolTip": "Models\\Entities\\ProgresoTemas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:24.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Notificaciones.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Notificaciones.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Notificaciones.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Entities\\Notificaciones.cs",
-              "RelativeToolTip": "Models\\Entities\\Notificaciones.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:25.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IJuegoService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IJuegoService.cs",
-              "RelativeDocumentMoniker": "Services\\IJuegoService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IJuegoService.cs",
-              "RelativeToolTip": "Services\\IJuegoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:19:56.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "TemasController.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\TemasController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\TemasController.cs",
               "RelativeDocumentMoniker": "Controllers\\api\\TemasController.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\TemasController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\TemasController.cs",
               "RelativeToolTip": "Controllers\\api\\TemasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T02:28:03.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:09:21.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sw.js",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\sw.js",
+              "RelativeDocumentMoniker": "wwwroot\\sw.js",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\sw.js",
+              "RelativeToolTip": "wwwroot\\sw.js",
+              "ViewState": "AgIAADQCAAAAAAAAAAAIwPkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-03T04:42:43.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RetoDiarioDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\RetoDiarioDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\RetoDiarioDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\RetoDiarioDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\RetoDiarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:31.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-09T03:07:39.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RachaService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\RachaService.cs",
+              "RelativeDocumentMoniker": "Services\\RachaService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\RachaService.cs",
+              "RelativeToolTip": "Services\\RachaService.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwF8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T16:58:11.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "racha.html",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\racha.html",
+              "RelativeDocumentMoniker": "wwwroot\\racha.html",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\racha.html",
+              "RelativeToolTip": "wwwroot\\racha.html",
+              "ViewState": "AgIAAOUBAAAAAAAAAAAiwPwBAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-10T16:55:58.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "RachaController.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\RachaController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\RachaController.cs",
               "RelativeDocumentMoniker": "Controllers\\api\\RachaController.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\RachaController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\RachaController.cs",
               "RelativeToolTip": "Controllers\\api\\RachaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -463,203 +495,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "JuegoController.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\JuegoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\api\\JuegoController.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Controllers\\api\\JuegoController.cs",
-              "RelativeToolTip": "Controllers\\api\\JuegoController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T02:23:12.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "style_temaIndex.css",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\scripts\\style_temaIndex.css",
-              "RelativeDocumentMoniker": "wwwroot\\scripts\\style_temaIndex.css",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\scripts\\style_temaIndex.css",
-              "RelativeToolTip": "wwwroot\\scripts\\style_temaIndex.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-10T21:30:30.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "wwwroot\\index.html",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\index.html",
-              "RelativeToolTip": "wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-09T02:16:54.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "login.html",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\login.html",
-              "RelativeDocumentMoniker": "wwwroot\\login.html",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\login.html",
-              "RelativeToolTip": "wwwroot\\login.html",
-              "ViewState": "AgIAAHcBAAAAAAAAAAAAAIwBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-10T19:28:27.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "vistaTemas.html",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\vistaTemas.html",
-              "RelativeDocumentMoniker": "wwwroot\\vistaTemas.html",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\vistaTemas.html",
-              "RelativeToolTip": "wwwroot\\vistaTemas.html",
-              "ViewState": "AgIAAL8AAAAAAAAAAADwv+8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-09T02:55:41.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "racha.html",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\racha.html",
-              "RelativeDocumentMoniker": "wwwroot\\racha.html",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\racha.html",
-              "RelativeToolTip": "wwwroot\\racha.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-10T16:55:58.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-09T03:07:39.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ITemaService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\ITemaService.cs",
-              "RelativeDocumentMoniker": "Services\\ITemaService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\ITemaService.cs",
-              "RelativeToolTip": "Services\\ITemaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:19:50.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "style_vistaTemas.css",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\scripts\\style_vistaTemas.css",
-              "RelativeDocumentMoniker": "wwwroot\\scripts\\style_vistaTemas.css",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\scripts\\style_vistaTemas.css",
-              "RelativeToolTip": "wwwroot\\scripts\\style_vistaTemas.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOwAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-10T18:59:54.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "EstadisticasDTO.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Estadisticas\\EstadisticasDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\Estadisticas\\EstadisticasDTO.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Estadisticas\\EstadisticasDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\Estadisticas\\EstadisticasDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T17:40:04.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IEstadisticasDTO.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Estadisticas\\IEstadisticasDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\Estadisticas\\IEstadisticasDTO.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Estadisticas\\IEstadisticasDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\Estadisticas\\IEstadisticasDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T17:40:35.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PartidaOfflineDTO.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:33.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "style.css",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\scripts\\style.css",
-              "RelativeDocumentMoniker": "wwwroot\\scripts\\style.css",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\wwwroot\\scripts\\style.css",
-              "RelativeToolTip": "wwwroot\\scripts\\style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-09T02:20:01.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ProgresoOfflineDTO.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:32.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "RetoDiarioDTO.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\RetoDiarioDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\RetoDiarioDTO.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Juego\\RetoDiarioDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\Juego\\RetoDiarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:31.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ITemaListaDTO.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Temas\\ITemaListaDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\Temas\\ITemaListaDTO.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Temas\\ITemaListaDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\Temas\\ITemaListaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:28.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 16,
               "Title": "TemaListaDTO.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Temas\\TemaListaDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Temas\\TemaListaDTO.cs",
               "RelativeDocumentMoniker": "Models\\DTOs\\Temas\\TemaListaDTO.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\DTOs\\Temas\\TemaListaDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Temas\\TemaListaDTO.cs",
               "RelativeToolTip": "Models\\DTOs\\Temas\\TemaListaDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -667,75 +507,651 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "RegistroDTOValidator.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Validators\\RegistroDTOValidator.cs",
-              "RelativeDocumentMoniker": "Models\\Validators\\RegistroDTOValidator.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Models\\Validators\\RegistroDTOValidator.cs",
-              "RelativeToolTip": "Models\\Validators\\RegistroDTOValidator.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\AuthController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\api\\AuthController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAADwv4sAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:14.744Z"
+              "WhenOpened": "2025-12-09T03:04:35.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\scripts\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\scripts\\style.css",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\scripts\\style.css",
+              "RelativeToolTip": "wwwroot\\scripts\\style.css",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-09T02:20:01.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GeminiService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\GeminiService.cs",
+              "RelativeDocumentMoniker": "Services\\GeminiService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\GeminiService.cs",
+              "RelativeToolTip": "Services\\GeminiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:59:26.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NotificacionesController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\NotificacionesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\NotificacionesController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\NotificacionesController.cs",
+              "RelativeToolTip": "Controllers\\api\\NotificacionesController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAmwL8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:31:24.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JuegoController.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\JuegoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\api\\JuegoController.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Controllers\\api\\JuegoController.cs",
+              "RelativeToolTip": "Controllers\\api\\JuegoController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T02:23:12.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ITemaService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\ITemaService.cs",
+              "RelativeDocumentMoniker": "Services\\ITemaService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\ITemaService.cs",
+              "RelativeToolTip": "Services\\ITemaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:19:50.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "style_temaIndex.css",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\scripts\\style_temaIndex.css",
+              "RelativeDocumentMoniker": "wwwroot\\scripts\\style_temaIndex.css",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\scripts\\style_temaIndex.css",
+              "RelativeToolTip": "wwwroot\\scripts\\style_temaIndex.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-10T21:30:30.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EncriptacionHelper.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Helpers\\EncriptacionHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\EncriptacionHelper.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Helpers\\EncriptacionHelper.cs",
+              "RelativeToolTip": "Helpers\\EncriptacionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T00:12:55.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Helpers\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\JwtHelper.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Helpers\\JwtHelper.cs",
+              "RelativeToolTip": "Helpers\\JwtHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T00:12:57.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "JuegoService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\JuegoService.cs",
+              "RelativeDocumentMoniker": "Services\\JuegoService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\JuegoService.cs",
+              "RelativeToolTip": "Services\\JuegoService.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAmwKgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:19:26.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PushNotificationService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\PushNotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\PushNotificationService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\PushNotificationService.cs",
+              "RelativeToolTip": "Services\\PushNotificationService.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAmwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:19:13.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:19:59.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IRachaService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IRachaService.cs",
+              "RelativeDocumentMoniker": "Services\\IRachaService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IRachaService.cs",
+              "RelativeToolTip": "Services\\IRachaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:19:53.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IJuegoService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IJuegoService.cs",
+              "RelativeDocumentMoniker": "Services\\IJuegoService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IJuegoService.cs",
+              "RelativeToolTip": "Services\\IJuegoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:19:56.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PushSubscriptions.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\PushSubscriptions.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\PushSubscriptions.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\PushSubscriptions.cs",
+              "RelativeToolTip": "Models\\Entities\\PushSubscriptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:06:35.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "NotificacionPushDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Push\\NotificacionPushDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Push\\NotificacionPushDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Push\\NotificacionPushDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Push\\NotificacionPushDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:11:53.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SubscriptionDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Push\\SubscriptionDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Push\\SubscriptionDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Push\\SubscriptionDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Push\\SubscriptionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:09:37.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Repository.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:05.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AhorcaditoContext.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\AhorcaditoContext.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\AhorcaditoContext.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\AhorcaditoContext.cs",
+              "RelativeToolTip": "Models\\Entities\\AhorcaditoContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:26.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IPushNotificationService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IPushNotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\IPushNotificationService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IPushNotificationService.cs",
+              "RelativeToolTip": "Services\\IPushNotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T04:20:24.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ActualizarProgresoDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\ActualizarProgresoDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\ActualizarProgresoDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\ActualizarProgresoDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\ActualizarProgresoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:58:50.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BackgroundTaskQueue.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\BackgroundTaskQueue.cs",
+              "RelativeDocumentMoniker": "Services\\BackgroundTaskQueue.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\BackgroundTaskQueue.cs",
+              "RelativeToolTip": "Services\\BackgroundTaskQueue.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAEwCIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:04:05.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ITemaListaDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Temas\\ITemaListaDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Temas\\ITemaListaDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Temas\\ITemaListaDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Temas\\ITemaListaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:28.65Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Repositories\\IRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IRepository.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Repositories\\IRepository.cs",
-              "RelativeToolTip": "Repositories\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Usuarios.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Usuarios.cs",
+              "RelativeToolTip": "Models\\Entities\\Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:23:12.449Z"
+              "WhenOpened": "2025-12-10T21:23:20.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Notificaciones.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Notificaciones.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Notificaciones.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Notificaciones.cs",
+              "RelativeToolTip": "Models\\Entities\\Notificaciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:25.827Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 42,
-              "Title": "IGeminiService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IGeminiService.cs",
-              "RelativeDocumentMoniker": "Services\\IGeminiService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IGeminiService.cs",
-              "RelativeToolTip": "Services\\IGeminiService.cs",
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Mappings\\MappingProfile.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "Mappings\\MappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T00:12:44.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IGeminiService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IGeminiService.cs",
+              "RelativeDocumentMoniker": "Services\\IGeminiService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\IGeminiService.cs",
+              "RelativeToolTip": "Services\\IGeminiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T21:19:57.769Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 43,
-              "Title": "IRachaService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IRachaService.cs",
-              "RelativeDocumentMoniker": "Services\\IRachaService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\IRachaService.cs",
-              "RelativeToolTip": "Services\\IRachaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:19:53.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
               "Title": "QueuedHostedService.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\QueuedHostedService.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\QueuedHostedService.cs",
               "RelativeDocumentMoniker": "Services\\QueuedHostedService.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\QueuedHostedService.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Services\\QueuedHostedService.cs",
               "RelativeToolTip": "Services\\QueuedHostedService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T03:04:12.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "BackgroundTaskQueue.cs",
-              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\BackgroundTaskQueue.cs",
-              "RelativeDocumentMoniker": "Services\\BackgroundTaskQueue.cs",
-              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\ElAhorcadito\\Services\\BackgroundTaskQueue.cs",
-              "RelativeToolTip": "Services\\BackgroundTaskQueue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABMAAAAAAAAAA==",
+              "DocumentIndex": 45,
+              "Title": "RegistroDTOValidator.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Validators\\RegistroDTOValidator.cs",
+              "RelativeDocumentMoniker": "Models\\Validators\\RegistroDTOValidator.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Validators\\RegistroDTOValidator.cs",
+              "RelativeToolTip": "Models\\Validators\\RegistroDTOValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T03:04:05.802Z"
+              "WhenOpened": "2025-12-10T21:23:14.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ProgresoOfflineDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\ProgresoOfflineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:32.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PartidaOfflineDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\PartidaOfflineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:33.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "PalabraActualDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\PalabraActualDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\PalabraActualDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\PalabraActualDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\PalabraActualDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T00:00:21.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IRetoDiarioDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IRetoDiarioDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\IRetoDiarioDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IRetoDiarioDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\IRetoDiarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T00:00:02.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IProgresoOfflineDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IProgresoOfflineDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\IProgresoOfflineDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IProgresoOfflineDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\IProgresoOfflineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:59:57.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IPartidaOfflineDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IPartidaOfflineDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\IPartidaOfflineDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IPartidaOfflineDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\IPartidaOfflineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:59:51.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IPalabraActualDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IPalabraActualDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\IPalabraActualDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IPalabraActualDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\IPalabraActualDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:59:43.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IActualizarProgresoDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IActualizarProgresoDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Juego\\IActualizarProgresoDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Juego\\IActualizarProgresoDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Juego\\IActualizarProgresoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:59:38.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "RegistroDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\RegistroDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\RegistroDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\RegistroDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\RegistroDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:57:43.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "PreferenciasDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\PreferenciasDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\PreferenciasDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\PreferenciasDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\PreferenciasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:57:36.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "PerfilDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\PerfilDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\PerfilDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\PerfilDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\PerfilDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:57:35.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\LoginDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\LoginDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:57:29.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IRegistroDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\IRegistroDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\IRegistroDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\IRegistroDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\IRegistroDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:57:24.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IPreferenciasDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\IPreferenciasDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\IPreferenciasDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\IPreferenciasDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\IPreferenciasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:57:17.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "IPerfilDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\IPerfilDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\IPerfilDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\IPerfilDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\IPerfilDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:57:10.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ILoginDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\ILoginDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Auth\\ILoginDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Auth\\ILoginDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Auth\\ILoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T23:57:04.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Palabras.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Palabras.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Palabras.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Palabras.cs",
+              "RelativeToolTip": "Models\\Entities\\Palabras.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:25.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "EstadisticasDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Estadisticas\\EstadisticasDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Estadisticas\\EstadisticasDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Estadisticas\\EstadisticasDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Estadisticas\\EstadisticasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T17:40:04.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IEstadisticasDTO.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Estadisticas\\IEstadisticasDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Estadisticas\\IEstadisticasDTO.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\DTOs\\Estadisticas\\IEstadisticasDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\Estadisticas\\IEstadisticasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T17:40:35.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ProgresoTemas.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\ProgresoTemas.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\ProgresoTemas.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\ProgresoTemas.cs",
+              "RelativeToolTip": "Models\\Entities\\ProgresoTemas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:24.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Rachas.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Rachas.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Rachas.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Rachas.cs",
+              "RelativeToolTip": "Models\\Entities\\Rachas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:23.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "RefreshTokens.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\RefreshTokens.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\RefreshTokens.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\RefreshTokens.cs",
+              "RelativeToolTip": "Models\\Entities\\RefreshTokens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:22.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Temas.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Temas.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Temas.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Models\\Entities\\Temas.cs",
+              "RelativeToolTip": "Models\\Entities\\Temas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:22.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "style_vistaTemas.css",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\scripts\\style_vistaTemas.css",
+              "RelativeDocumentMoniker": "wwwroot\\scripts\\style_vistaTemas.css",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\wwwroot\\scripts\\style_vistaTemas.css",
+              "RelativeToolTip": "wwwroot\\scripts\\style_vistaTemas.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-10T18:59:54.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRepository.cs",
+              "ToolTip": "D:\\JULIOREYES\\Universidad\\11.SEMESTRE-11\\Hangman\\indexdDB funciona perfecto falta racha mostrar correctas 8ene\\v5\\ElAhorcadito\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:23:12.449Z"
             }
           ]
         }

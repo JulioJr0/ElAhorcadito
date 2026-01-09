@@ -1,0 +1,716 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#16a085">
+    <title>Notificaciones - El Ahorcadito</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #008073;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: transparent;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                align-items: center;
+                padding: 40px;
+            }
+
+            .container {
+                width: 90%;
+                min-height: auto;
+                background-color: rgba(0, 0, 0, 0.1);
+                padding: 40px;
+                border-radius: 30px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .back-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 24px;
+            flex-grow: 1;
+        }
+
+        .badge-count {
+            background: #ff7d00;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .section-label {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 20px 0 10px 5px;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .notification-item {
+            display: flex;
+            padding: 15px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+            .notification-item:hover {
+                transform: translateY(-2px);
+            }
+
+            .notification-item.new {
+                background-color: #ff7d00;
+            }
+
+            .notification-item.old {
+                background-color: #004d46;
+            }
+
+        .icon-box {
+            width: 45px;
+            height: 45px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .content-box {
+            flex: 1;
+        }
+
+        .notif-title {
+            font-weight: bold;
+            font-size: 17px;
+            margin-bottom: 2px;
+        }
+
+        .notif-desc {
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.3;
+        }
+
+        .notif-time {
+            font-size: 12px;
+            opacity: 0.6;
+            margin-top: 5px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+            opacity: 0.7;
+            margin-left: 10px;
+        }
+
+            .close-btn:hover {
+                opacity: 1;
+            }
+
+        .footer-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-actions {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+        }
+
+        .btn {
+            padding: 15px;
+            border-radius: 15px;
+            border: none;
+            font-weight: bold;
+            color: #008073;
+            background: white;
+            cursor: pointer;
+            font-size: 15px;
+            width: 100%;
+            transition: opacity 0.3s;
+        }
+
+            .btn:hover {
+                opacity: 0.9;
+            }
+
+        @media (min-width: 768px) {
+            .btn {
+                width: auto;
+                padding: 12px 25px;
+            }
+        }
+
+        .btn-delete {
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 100px 20px;
+            opacity: 0.7;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-btn">←</a>
+            <h1>Notificaciones</h1>
+            <div class="badge-count" id="badge-count" style="display: none;">0</div>
+        </header>
+
+        <div id="loading" class="loading">Cargando notificaciones...</div>
+
+        <div id="main-content" style="display: none;">
+            <div class="section-label">Nuevas</div>
+            <div id="list-new"></div>
+
+            <div class="section-label">Anteriores</div>
+            <div id="list-old"></div>
+        </div>
+
+        <div class="footer-actions" id="footer-actions" style="display: none;">
+            <button class="btn" id="btn-mark-all">Marcar todas como leídas</button>
+            <button class="btn btn-delete" id="btn-delete-all">Eliminar todas</button>
+        </div>
+
+        <div class="empty-state" id="empty-state" style="display: none;">
+            <div style="font-size: 50px; margin-bottom: 10px;">🔔</div>
+            <p>No tienes notificaciones por el momento.</p>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // VARIABLES GLOBALES
+        // ============================================
+        const token = localStorage.getItem('jwtToken');
+        if (!token) {
+            window.location.href = 'login.html';
+        }
+
+        const elementoListaNuevas = document.getElementById('list-new');
+        const elementoListaAnteriores = document.getElementById('list-old');
+        const elementoContador = document.getElementById('badge-count');
+        const elementoContenidoPrincipal = document.getElementById('main-content');
+        const elementoAcciones = document.getElementById('footer-actions');
+        const elementoEstadoVacio = document.getElementById('empty-state');
+        const elementoCargando = document.getElementById('loading');
+        const botonMarcarTodas = document.getElementById('btn-mark-all');
+        const botonEliminarTodas = document.getElementById('btn-delete-all');
+
+        let notificaciones = [];
+
+        // ============================================
+        // MAPEO DE ICONOS SEGÚN TIPO
+        // ============================================
+        function obtenerIconoNotificacion(tipo) {
+            const iconos = {
+                'RACHA': '🔥',
+                'TEMA_COMPLETADO': '✅',
+                'LOGRO': '🏆',
+                'SISTEMA': '📢',
+                'RECORDATORIO': '⏰'
+            };
+            return iconos[tipo] || '🔔';
+        }
+
+        // ============================================
+        // CALCULAR TIEMPO TRANSCURRIDO
+        // ============================================
+        function calcularTiempoTranscurrido(fecha) {
+            const ahora = new Date();
+            const fechaNotif = new Date(fecha);
+            const diferencia = ahora - fechaNotif;
+
+            const segundos = Math.floor(diferencia / 1000);
+            const minutos = Math.floor(diferencia / 60000);
+            const horas = Math.floor(diferencia / 3600000);
+            const dias = Math.floor(diferencia / 86400000);
+
+            if (segundos < 60) return 'Ahora';
+            if (minutos < 60) return `Hace ${minutos} min`;
+            if (horas < 24) return `Hace ${horas} hora${horas > 1 ? 's' : ''}`;
+            if (dias < 7) return `Hace ${dias} día${dias > 1 ? 's' : ''}`;
+
+            return fechaNotif.toLocaleDateString('es-MX', {
+                day: 'numeric',
+                month: 'short'
+            });
+        }
+
+        // ============================================
+        // CREAR ELEMENTO DE NOTIFICACIÓN
+        // ============================================
+        function crearElementoNotificacion(notificacion) {
+            const div = document.createElement('div');
+            const tipo = notificacion.leida ? 'old' : 'new';
+            div.className = `notification-item ${tipo}`;
+            div.dataset.id = notificacion.id;
+
+            const icono = obtenerIconoNotificacion(notificacion.tipo);
+            const tiempo = calcularTiempoTranscurrido(notificacion.fechaCreacion);
+
+            div.innerHTML = `
+                        <div class="icon-box">${icono}</div>
+                        <div class="content-box">
+                            <div class="notif-title">${notificacion.titulo}</div>
+                            <div class="notif-desc">${notificacion.mensaje || ''}</div>
+                            <div class="notif-time">${tiempo}</div>
+                        </div>
+                        <button class="close-btn" data-id="${notificacion.id}">✕</button>
+                    `;
+
+            // Click en notificación para marcar como leída
+            div.addEventListener('click', function (e) {
+                if (!e.target.classList.contains('close-btn')) {
+                    marcarComoLeida(notificacion.id);
+                }
+            });
+
+            // Click en botón cerrar
+            div.querySelector('.close-btn').addEventListener('click', function (e) {
+                e.stopPropagation();
+                eliminarNotificacion(notificacion.id);
+            });
+
+            return div;
+        }
+
+        // ============================================
+        // ACTUALIZAR INTERFAZ
+        // ============================================
+        function actualizarInterfaz() {
+            const nuevas = notificaciones.filter(n => !n.leida);
+            const anteriores = notificaciones.filter(n => n.leida);
+
+            // Actualizar contador
+            elementoContador.textContent = nuevas.length;
+            elementoContador.style.display = nuevas.length > 0 ? 'flex' : 'none';
+
+            // Limpiar listas
+            elementoListaNuevas.innerHTML = '';
+            elementoListaAnteriores.innerHTML = '';
+
+            // Si no hay notificaciones
+            if (notificaciones.length === 0) {
+                elementoContenidoPrincipal.style.display = 'none';
+                elementoAcciones.style.display = 'none';
+                elementoEstadoVacio.style.display = 'block';
+                return;
+            }
+
+            // Mostrar contenido
+            elementoContenidoPrincipal.style.display = 'block';
+            elementoAcciones.style.display = 'flex';
+            elementoEstadoVacio.style.display = 'none';
+
+            // Agregar notificaciones nuevas
+            if (nuevas.length > 0) {
+                nuevas.forEach(notif => {
+                    elementoListaNuevas.appendChild(crearElementoNotificacion(notif));
+                });
+            } else {
+                elementoListaNuevas.innerHTML = '<p style="text-align: center; opacity: 0.6; padding: 20px;">No hay notificaciones nuevas</p>';
+            }
+
+            // Agregar notificaciones anteriores
+            if (anteriores.length > 0) {
+                anteriores.forEach(notif => {
+                    elementoListaAnteriores.appendChild(crearElementoNotificacion(notif));
+                });
+            } else {
+                elementoListaAnteriores.innerHTML = '<p style="text-align: center; opacity: 0.6; padding: 20px;">No hay notificaciones anteriores</p>';
+            }
+        }
+
+        // ============================================
+        // CARGAR NOTIFICACIONES DESDE API
+        // ============================================
+        async function cargarNotificaciones() {
+            try {
+                const response = await fetchConToken('/api/Notificaciones/listar');
+
+                if (response.ok) {
+                    notificaciones = await response.json();
+
+                    // Guardar en cache
+                    await guardarNotificacionesEnCache(notificaciones);
+
+                    actualizarInterfaz();
+                } else {
+                    throw new Error('Error al cargar notificaciones');
+                }
+            } catch (error) {
+
+                // MODO OFFLINE
+                if (!navigator.onLine) {
+                    const notifCache = await cargarNotificacionesDesdeCache();
+
+                    if (notifCache) {
+                        notificaciones = notifCache;
+                        actualizarInterfaz();
+                        mostrarMensajeOffline();
+                    } else {
+                        elementoEstadoVacio.style.display = 'block';
+                        elementoEstadoVacio.innerHTML = `
+                    <div style="font-size: 50px; margin-bottom: 10px;">📡</div>
+                    <p>Sin conexión</p>
+                    <p style="font-size: 14px; opacity: 0.7; margin-top: 10px;">No hay notificaciones guardadas</p>
+                `;
+                    }
+                } else {
+                    elementoEstadoVacio.style.display = 'block';
+                    elementoEstadoVacio.innerHTML = `
+                <div style="font-size: 50px; margin-bottom: 10px;">⚠️</div>
+                <p>Error al cargar las notificaciones</p>
+                <p style="font-size: 14px; opacity: 0.7; margin-top: 10px;">Verifica tu conexión</p>
+            `;
+                }
+            } finally {
+                elementoCargando.style.display = 'none';
+            }
+        }
+
+        // Cache de notificaciones
+        async function guardarNotificacionesEnCache(notificaciones) {
+            try {
+                const db = await openIndexedDB();
+                const tx = db.transaction(['notificaciones-cache'], 'readwrite');
+                const store = tx.objectStore('notificaciones-cache');
+
+                await new Promise((resolve, reject) => {
+                    const request = store.put({
+                        id: 'notificaciones-usuario',
+                        data: notificaciones,
+                        timestamp: Date.now()
+                    });
+                    request.onsuccess = () => {
+                        resolve();
+                    };
+                    request.onerror = () => reject(request.error);
+                });
+            } catch (error) {
+            }
+        }
+
+        async function cargarNotificacionesDesdeCache() {
+            try {
+                const db = await openIndexedDB();
+                const tx = db.transaction(['notificaciones-cache'], 'readonly');
+                const store = tx.objectStore('notificaciones-cache');
+
+                return new Promise((resolve, reject) => {
+                    const request = store.get('notificaciones-usuario');
+                    request.onsuccess = () => {
+                        const result = request.result;
+                        if (result) {
+                            // Verificar edad (24 horas)
+                            const age = Date.now() - result.timestamp;
+                            if (age < 24 * 60 * 60 * 1000) {
+                                resolve(result.data);
+                            } else {
+                                resolve(null);
+                            }
+                        } else {
+                            resolve(null);
+                        }
+                    };
+                    request.onerror = () => reject(request.error);
+                });
+            } catch (error) {
+                return null;
+            }
+        }
+
+        function openIndexedDB() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open('ahorcaditoDB', 3);
+                request.onerror = () => reject(request.error);
+                request.onsuccess = () => resolve(request.result);
+                request.onupgradeneeded = (event) => {
+                    const db = event.target.result;
+                    if (!db.objectStoreNames.contains('notificaciones-cache')) {
+                        db.createObjectStore('notificaciones-cache', { keyPath: 'id' });
+                    }
+                };
+            });
+        }
+
+        function mostrarMensajeOffline() {
+            const mensaje = document.createElement('div');
+            mensaje.style.cssText = `
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #e74c3c;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        z-index: 1000;
+    `;
+            mensaje.textContent = '📡 Modo Offline - Mostrando datos guardados';
+            document.body.appendChild(mensaje);
+            setTimeout(() => mensaje.remove(), 5000);
+        }
+
+        async function fetchConToken(url, options = {}) {
+            let response = await fetch(url, {
+                ...options,
+                headers: {
+                    ...options.headers,
+                    'Authorization': `Bearer ${localStorage.getItem('jwtToken')}`
+                }
+            });
+
+            if (response.status === 401) {
+                const renewResponse = await fetch('/api/Auth/renew', {
+                    method: 'GET',
+                    credentials: 'include'
+                });
+
+                if (renewResponse.ok) {
+                    const nuevoToken = await renewResponse.text();
+                    localStorage.setItem('jwtToken', nuevoToken);
+
+                    response = await fetch(url, {
+                        ...options,
+                        headers: {
+                            ...options.headers,
+                            'Authorization': `Bearer ${nuevoToken}`
+                        }
+                    });
+                } else {
+                    localStorage.removeItem('jwtToken');
+                    window.location.href = 'login.html';
+                }
+            }
+
+            return response;
+        }
+        // ============================================
+        // MARCAR COMO LEÍDA
+        // ============================================
+        async function marcarComoLeida(id) {
+            const notificacion = notificaciones.find(n => n.id === id);
+            if (!notificacion || notificacion.leida) return;
+
+            //Actualizar localmente PRIMERO
+            notificacion.leida = true;
+            actualizarInterfaz();
+            await guardarNotificacionesEnCache(notificaciones);
+
+            // Intentar sincronizar con servidor
+            if (!navigator.onLine) {
+                return;
+            }
+
+            try {
+                const response = await fetchConToken(`/api/Notificaciones/marcar-leida/${id}`, {
+                    method: 'PUT'
+                });
+
+                if (!response.ok) {
+                    // Revertir si falla
+                    notificacion.leida = false;
+                    actualizarInterfaz();
+                    await guardarNotificacionesEnCache(notificaciones);
+                }
+            } catch (error) {
+                // Mantener el cambio local, se sincronizará después
+            }
+        }
+
+        // ============================================
+        // ELIMINAR NOTIFICACIÓN
+        // ============================================
+        async function eliminarNotificacion(id) {
+            if (!confirm('¿Eliminar esta notificación?')) return;
+
+            // Guardar copia por si falla
+            const notificacionesBackup = [...notificaciones];
+
+            // Eliminar localmente PRIMERO
+            notificaciones = notificaciones.filter(n => n.id !== id);
+            actualizarInterfaz();
+            await guardarNotificacionesEnCache(notificaciones);
+
+            // Intentar sincronizar con servidor
+            if (!navigator.onLine) {
+                return;
+            }
+
+            try {
+                const response = await fetchConToken(`/api/Notificaciones/eliminar/${id}`, {
+                    method: 'DELETE'
+                });
+
+                if (!response.ok) {
+                    // Revertir si falla
+                    notificaciones = notificacionesBackup;
+                    actualizarInterfaz();
+                    await guardarNotificacionesEnCache(notificaciones);
+                    alert('No se pudo eliminar la notificación');
+                }
+            } catch (error) {
+                // Mantener el cambio local
+            }
+        }
+
+        // ============================================
+        // MARCAR TODAS COMO LEÍDAS
+        // ============================================
+        async function marcarTodasComoLeidas() {
+            // Actualizar localmente PRIMERO
+            notificaciones.forEach(n => n.leida = true);
+            actualizarInterfaz();
+            await guardarNotificacionesEnCache(notificaciones);
+
+            // Intentar sincronizar con servidor
+            if (!navigator.onLine) {
+                return;
+            }
+
+            try {
+                const response = await fetchConToken('/api/Notificaciones/marcar-todas-leidas', {
+                    method: 'PUT'
+                });
+
+                if (!response.ok) {
+                    alert('No se pudieron marcar las notificaciones en el servidor');
+                }
+            } catch (error) {
+                // Mantener cambios locales
+            }
+        }
+
+        // ============================================
+        // ELIMINAR TODAS
+        // ============================================
+        async function eliminarTodas() {
+            if (!confirm('¿Estás seguro de eliminar TODAS las notificaciones? Esta acción no se puede deshacer.')) {
+                return;
+            }
+
+            // Guardar copia por si falla
+            const notificacionesBackup = [...notificaciones];
+
+            // Eliminar localmente PRIMERO
+            notificaciones = [];
+            actualizarInterfaz();
+            await guardarNotificacionesEnCache(notificaciones);
+
+            // Intentar sincronizar con servidor
+            if (!navigator.onLine) {
+                return;
+            }
+
+            try {
+                const response = await fetchConToken('/api/Notificaciones/eliminar-todas', {
+                    method: 'DELETE'
+                });
+
+                if (!response.ok) {
+                    // Revertir si falla
+                    notificaciones = notificacionesBackup;
+                    actualizarInterfaz();
+                    await guardarNotificacionesEnCache(notificaciones);
+                    alert('No se pudieron eliminar las notificaciones en el servidor');
+                }
+            } catch (error) {
+                // Mantener cambios locales
+            }
+        }
+
+        // ============================================
+        // EVENT LISTENERS
+        // ============================================
+        botonMarcarTodas.addEventListener('click', marcarTodasComoLeidas);
+        botonEliminarTodas.addEventListener('click', eliminarTodas);
+
+        // ============================================
+        // INICIALIZACIÓN
+        // ============================================
+        document.addEventListener('DOMContentLoaded', function () {
+            cargarNotificaciones();
+
+            // Actualizar cada 30 segundos
+            setInterval(cargarNotificaciones, 30000);
+        });
+    </script>
+    </body>
+</html>

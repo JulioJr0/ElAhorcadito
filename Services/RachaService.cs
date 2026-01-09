@@ -10,16 +10,19 @@ namespace ElAhorcadito.Services
         public IRepository<ProgresoTemas> ProgresoRepository { get; }
         public IRepository<Notificaciones> NotificacionRepository { get; }
         public IRepository<Temas> TemasRepository { get; }
+        public IPushNotificationService PushService { get; }
 
         public RachaService(IRepository<Rachas> rachaRepository,
             IRepository<ProgresoTemas> progresoRepository,
             IRepository<Notificaciones> notificacionRepository,
-            IRepository<Temas> temasRepository)
+            IRepository<Temas> temasRepository,
+            IPushNotificationService pushService)
         {
             RachaRepository = rachaRepository;
             ProgresoRepository = progresoRepository;
             NotificacionRepository = notificacionRepository;
             TemasRepository = temasRepository;
+            PushService = pushService;
         }
 
         public void CheckAndExtendRacha(int idUsuario, int idTemaDiario)
@@ -36,7 +39,7 @@ namespace ElAhorcadito.Services
                     PalabrasTotales = 10
                 };
                 RachaRepository.Insert(racha);
-                GenerarNotificacionRacha(idUsuario, 1);
+                GenerarNotificacionRachaAsync(idUsuario, 1);
                 return;
             }
 
@@ -48,7 +51,7 @@ namespace ElAhorcadito.Services
                 racha.FechaUltimaRacha = DateTime.Today;
                 racha.PalabrasTotales += 10;
                 RachaRepository.Update(racha);
-                GenerarNotificacionRacha(idUsuario, (int)racha.DiasConsecutivos);
+                GenerarNotificacionRachaAsync(idUsuario, (int)racha.DiasConsecutivos);
             }
             else if (racha.FechaUltimaRacha?.Date < ayer)
             {
@@ -59,7 +62,7 @@ namespace ElAhorcadito.Services
             }
         }
 
-        private void GenerarNotificacionRacha(int idUsuario, int diasConsecutivos)
+        private async void GenerarNotificacionRachaAsync(int idUsuario, int diasConsecutivos)
         {
             var mensaje = diasConsecutivos switch
             {
@@ -79,6 +82,19 @@ namespace ElAhorcadito.Services
                 Leida = false
             };
             NotificacionRepository.Insert(notificacion);
+            // AGREGAR: Enviar notificación push
+            try
+            {
+                await PushService.EnviarNotificacionPersonal(
+                    idUsuario,
+                    $"¡Racha de {diasConsecutivos} días!",
+                    mensaje
+                );
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error enviando push: {ex.Message}");
+            }
         }
 
         public EstadisticasDTO GetEstadisticas(int idUsuario)

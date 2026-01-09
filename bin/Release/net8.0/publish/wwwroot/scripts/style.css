@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #008479;
+    color: #fff;
+}
+
+.container {
+    width: 850px;
+    background: #00605A;
+    display: grid;
+    grid-template-columns:auto 2fr;
+    gap:40px;
+    align-items: flex-end;
+    padding: 60px 40px;
+    border-radius: 50px;
+}
+.game-header{
+    grid-column: span 2;
+    display: flex;
+    height:40px;
+    justify-content: space-between;
+}
+.btn-regresar {
+    background-color: #008479;
+    border: 0px;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+    width: 150px;
+    cursor: pointer;
+    font-weight: 600;
+}
+    .btn-regresar:hover {
+        background-color: #006b68;
+    }
+.reto-badge{
+    background-color: #FF7800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    margin-right:10px;
+    width:150px;
+    border-radius:20px;
+}
+.hangman-box img {
+    max-width: 270px;
+}
+
+.hangman-box h1 {
+    font-size: 1.45rem;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hearts-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 5px;
+}
+.heart {
+    font-size: 1.5rem;
+}
+.word-display {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.word-display .letter {
+    width: 28px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #fff;
+}
+
+.word-display .letter.guessed {
+    border-color: transparent;
+    margin: -40px 0 35px;
+    text-transform: uppercase;
+}
+
+.game-box h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.game-box h4 b {
+    font-weight: 600;
+    color: #FF7800;
+}
+
+.game-box .guesses-text b {
+    color: #ff0000;
+}
+
+.game-box .keyboard {
+    display: flex;
+    gap: 5px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.keyboard button[disabled]{
+    opacity: 0.6;
+    pointer-events: none;
+}
+:where(.game-modal, .keyboard) button {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #06973B;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.keyboard button {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #06973B;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 7px;
+    width: calc(100% / 8 - 5px);
+    transition: background-color 0.3s ease;
+}
+    .keyboard button:hover:not([disabled]) {
+        background: #8286c9;
+    }
+    .keyboard button.correct {
+        background-color: #06973B;
+    }
+    .keyboard button.incorrect {
+        background-color: #E84C3D;
+    }
+
+.game-modal {
+    color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 0, 10px;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.4s ease;
+}
+.game-modal.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.game-modal .content {
+    background-color: #fff;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+/*35:12*/
+.game-modal img {
+    max-width: 130px;
+}
+
+.game-modal h4 {
+    font-size: 1.53rem;
+}
+
+.game-modal p {
+    font-size: 1.15rem;
+    margin: 15px 0 30px;
+    font-weight: 500;
+}
+.game-modal p b{
+    color: #5E63BA;
+}
+    .game-modal button {
+        padding: 12px 23px;
+        background: #06973B;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+        .game-modal button:hover {
+            background: #8286c9;
+        }
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tema-text, .progreso-text {
+    text-align: center;
+}
+@media (max-width:500px){
+   
+    .container {
+        display:flex;
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+        gap:50px;
+    }
+    .hangman-box img {
+        max-width:260px;
+    }
+
+    .hangman-box h1 {
+        display: none;
+    }
+    .game-header{
+        width: 90%;
+        height:50px;
+        display: flex;
+        margin: 0px;
+        justify-content:space-between;
+    }
+    .btn-regresar {
+        font-size: 1em;
+        border: 0px;
+        width:120px;
+        border-radius:20px;
+        background-color:#008479;
+        color: #fff;
+    }
+    .reto-badge{
+        background-color:#FF7800;
+        width:150px;
+        height:30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:20px;
+    }
+    .hearts-container{
+        display: flex;
+        justify-content: center;
+        margin:5px;
+    }
+}

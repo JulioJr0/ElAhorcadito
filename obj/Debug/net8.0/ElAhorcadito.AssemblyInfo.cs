@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElAhorcadito")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4f3a269c19a081136d073fa5958a4df37bf7777")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdeb6b3d4b85fd885d45dc78d3029e4b6205bb34")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElAhorcadito")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElAhorcadito")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

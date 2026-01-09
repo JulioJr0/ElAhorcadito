@@ -22,6 +22,8 @@ public partial class AhorcaditoContext : DbContext
 
     public virtual DbSet<ProgresoTemas> ProgresoTemas { get; set; }
 
+    public virtual DbSet<PushSubscriptions> PushSubscriptions { get; set; }
+
     public virtual DbSet<Rachas> Rachas { get; set; }
 
     public virtual DbSet<RefreshTokens> RefreshTokens { get; set; }
@@ -42,7 +44,9 @@ public partial class AhorcaditoContext : DbContext
 
             entity.ToTable("notificaciones");
 
-            entity.HasIndex(e => e.IdUsuario, "fk_notificacion_usuario");
+            entity.HasIndex(e => e.Leida, "idx_leida");
+
+            entity.HasIndex(e => new { e.IdUsuario, e.FechaCreacion }, "idx_usuario_fecha");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.FechaCreacion)
@@ -113,6 +117,52 @@ public partial class AhorcaditoContext : DbContext
             entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.ProgresoTemas)
                 .HasForeignKey(d => d.IdUsuario)
                 .HasConstraintName("fk_progreso_usuario");
+        });
+
+        modelBuilder.Entity<PushSubscriptions>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("push_subscriptions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => e.IdUsuario, "fk_push_usuario");
+
+            entity.HasIndex(e => e.Activo, "idx_activo");
+
+            entity.HasIndex(e => e.Endpoint, "idx_endpoint").IsUnique();
+
+            entity.HasIndex(e => e.FechaCreacion, "idx_fecha_creacion");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Activo)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("activo");
+            entity.Property(e => e.Auth)
+                .HasMaxLength(100)
+                .HasColumnName("auth");
+            entity.Property(e => e.Endpoint)
+                .HasMaxLength(500)
+                .HasColumnName("endpoint");
+            entity.Property(e => e.FechaCreacion)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnType("timestamp")
+                .HasColumnName("fecha_creacion");
+            entity.Property(e => e.FechaUltimaNotificacion)
+                .HasColumnType("timestamp")
+                .HasColumnName("fecha_ultima_notificacion");
+            entity.Property(e => e.IdUsuario).HasColumnName("id_usuario");
+            entity.Property(e => e.P256dh)
+                .HasMaxLength(200)
+                .HasColumnName("p256dh");
+            entity.Property(e => e.UserAgent)
+                .HasMaxLength(500)
+                .HasColumnName("user_agent");
+
+            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.PushSubscriptions)
+                .HasForeignKey(d => d.IdUsuario)
+                .HasConstraintName("fk_push_usuario");
         });
 
         modelBuilder.Entity<Rachas>(entity =>

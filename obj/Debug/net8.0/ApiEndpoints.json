@@ -136,6 +136,120 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "ContarNoLeidas",
+    "RelativePath": "api/Notificaciones/contar-no-leidas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "Desuscribir",
+    "RelativePath": "api/Notificaciones/desuscribir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "endpoint",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "EliminarTodas",
+    "RelativePath": "api/Notificaciones/eliminar-todas",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "EliminarNotificacion",
+    "RelativePath": "api/Notificaciones/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "ListarNotificaciones",
+    "RelativePath": "api/Notificaciones/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "MarcarComoLeida",
+    "RelativePath": "api/Notificaciones/marcar-leida/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "MarcarTodasLeidas",
+    "RelativePath": "api/Notificaciones/marcar-todas-leidas",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "GetPublicKey",
+    "RelativePath": "api/Notificaciones/publickey",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.NotificacionesController",
+    "Method": "Suscribir",
+    "RelativePath": "api/Notificaciones/suscribir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ElAhorcadito.Models.DTOs.Push.SubscriptionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ElAhorcadito.Controllers.api.RachaController",
     "Method": "GetEstadisticas",
     "RelativePath": "api/Racha/estadisticas",
@@ -143,6 +257,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.TemasController",
+    "Method": "GetTemaById",
+    "RelativePath": "api/Temas/{idTema}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTema",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -159,6 +289,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ElAhorcadito.Controllers.api.TemasController",
+    "Method": "VerificarReinicio",
+    "RelativePath": "api/Temas/verificar-reinicio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]
